@@ -1,7 +1,7 @@
 # start_dev
 #### Front-end developing start template
 
-Author: [Julian](https://www.youtube.com/)
+Author: Julian
 
 ## How to use
 
