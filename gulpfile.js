@@ -24,11 +24,11 @@ const { watch, src, dest, parallel } = require('gulp'),
 function jsLibs() {
 	return src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-		// 'app/libs/slick-carousel/slick/slick.min.js',
+		// 'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'app/libs/slick-carousel/slick/slick.min.js',
 		// 'app/libs/owl.carousel/dist/owl.carousel.min.js',
 		// 'app/libs/fancybox/dist/jquery.fancybox.min.js',
-		'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
+		// 'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
 	])
 	.pipe(concat('libs.min.js'))
 	.pipe(uglify())
@@ -39,8 +39,10 @@ function jsLibs() {
 // css libs
 function cssLibs() {
 	return src([
-		'app/libs/magnific-popup/dist/magnific-popup.css',
-		// 'app/libs/slick-carousel/slick/slick.js',
+		// 'app/libs/magnific-popup/dist/magnific-popup.css',
+		'app/libs/slick-carousel/slick/slick.css',
+		'app/libs/slick-carousel/slick/slick-theme.css'
+		'app/libs/fontawesome-free/css/all.css'
 		// 'app/libs/owl.carousel/dist/assets/owl.carousel.min.css',
 		// 'app/libs/fancybox/dist/jquery.fancybox.css',
 	])
