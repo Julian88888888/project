@@ -1,5 +1,309 @@
-header.b-header
+header.header 
 	.container
-		.row
-			.col
-				p Header
+		.b-header-top
+			.b-nav._nav 
+					a(href="#")._link Доставка 
+					a(href="#")._link Оплата 
+					a(href="#")._link Контакты
+			
+			a(href="tel:+79991242424").b-phone--header._phone +7 999 124-24-24
+			a(href="mailto:farm@vit.com").b-email--header._email farm@vit.com
+			.b-language._language 
+				._box 
+					._item
+						._img 
+							img(src="img/svg/ru-img.svg")
+						._text RU
+						._arrow 
+				._box.language__box--exit
+					a(href="#")._item
+						._img 
+							img(src="img/svg/de-img.svg")
+						._text DE
+						._arrow 
+.container.z-index
+	.b-header-middle 
+		.b-hamburger._hamburger
+			._item 
+			._item 
+			._item 
+		a(href="#").b-logo._logo 
+			img(src="img/svg/logo.svg")._img
+			img(src="img/svg/logo-mobile.svg")._img-mobile
+			span._text Лекарства 
+				br
+				| из Германии
+		.b-search._search 
+			._box 
+				input(type="text", placeholder="Название, симптом или бренд")._input 
+				button._closed
+				button._btn 
+				
+			._bottom-cat 
+				a(href="#")._item Голова
+				a(href="#")._item Подорожник
+				a(href="#")._item Баварские сосиски
+			.b-open-search._open-search 
+				.container 
+					._box 
+						._item 
+							._img 
+								img(src="img/search/img.png")
+							._name Voltaren® Schmerzgel forte 
+							._category • Крем
+							._pictory 
+								i.icon-hart 
+								i.icon-start
+							._signature Хит-продаж
+						._item 
+							._img 
+							._name Voltaren® Schmerzgel forte 
+							._category • Крем
+							._pictory 
+								i.icon-hart 
+								i.icon-start
+							._signature Хит-продаж
+						._item 
+							._img 
+								img(src="img/search/img.png")
+							._name Voltaren® Schmerzgel forteuoau oauaout uouko auaouokue
+							._category • Крем
+							._pictory 
+								i.icon-start
+							._signature Хит-продаж
+						._item 
+							._img 
+							._name Voltaren® Schmerzgel forte 
+							._category • Крем
+							._pictory 
+								i.icon-hart 
+							._signature 
+		.b-button-header._button-header 
+			.b-user._user 
+				._click
+					img(src="img/svg/user-btn.svg")._img 
+					._text Войти 
+						._arrow 
+				//- .b-popup-user._popup.popup-user-entry(style="display: none;") 
+				//- 	a(href="#")._item Авторизация
+				//- 	a(href="#")._item Регистрация
+				.b-popup-user._popup.popup-user-user(style="display: none;") 
+					._title Здравствуйте, Тимур
+					a(href="#")._item Мои заказы
+					a(href="#")._item Настройки
+					a(href="#")._item Лететь в Германию 
+					a(href="#")._logOff Выйти
+
+			.b-basket._basket
+				._box
+					._quantity 1
+					include ../../img/svg/basket.svg
+				.b-popup-basket._popup
+					._wrap  
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen 
+								._box-bottom 
+									._price € 170
+									._price-no € 170 
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="1" min="1" max="100")
+										button(type="button" id="add" class="add") +
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg
+								._box-bottom 
+									._price € 170
+									._price-no € 170 
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="3" min="1" max="100")
+										button(type="button" id="add" class="add") +
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg
+								._box-bottom 
+									._price € 170
+									._price-no
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="3" min="1" max="100")
+										button(type="button" id="add" class="add") +
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg
+								._box-bottom 
+									._price € 170
+									._price-no € 170 
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="3" min="1" max="100")
+										button(type="button" id="add" class="add") +
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg
+								._box-bottom 
+									._price € 170
+									._price-no 
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="3" min="1" max="100")
+										button(type="button" id="add" class="add") +
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg
+								._box-bottom 
+									._price € 170
+									._price-no € 170 
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="3" min="1" max="100")
+										button(type="button" id="add" class="add") +
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg
+								._box-bottom 
+									._price € 170
+									._price-no 
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="3" min="1" max="100")
+										button(type="button" id="add" class="add") +
+						._item 
+							._img 
+								img(src="img/basket/img.png")
+							._box 
+								a(href="#")._name Otriven® gegen Schnupfen Dosi - erspray gegengegengegengeg
+								._box-bottom 
+									._price € 170
+									._price-no € 170 
+									._delete 
+										include ../../img/basket/delet.svg 
+									._number  
+										button(type="button" id="sub" class="sub") -
+										input(class="count" type="text" id="1" value="3" min="1" max="100")
+										button(type="button" id="add" class="add") +								
+					._botton 
+						._info 2 товара на сумму € 340 
+						._btn 
+							a(href="#").btn.btn--blue Перейти в корзину
+			.b-heart._heart 
+				img(src="img/svg/heart.svg")
+.overlflov-search
+.b-category-header 
+	.container 
+		._box
+			._item
+				span.clic-catalog-js
+					include ../../img/category/catalog.svg 
+					| Каталог
+				.b-subnav 
+					.container
+						._box 
+							._item 
+								._img 
+									img(src="img/category-home/img1.jpg")
+								a(href="#")._title 
+									span._tt Медикаменты и другие товары
+									include ../../img/svg/arrow-right-click.svg
+								._subject
+									a(href="#")._link Для головы
+									a(href="#")._link Витамины
+									a(href="#")._link От живота
+									a(href="#")._link От тупости
+							._item 
+								._img 
+									img(src="img/category-home/img2.jpg")
+								a(href="#")._title
+									span._tt Дети и семья
+									include ../../img/svg/arrow-right-click.svg
+								._subject
+									a(href="#")._link Детское питание
+									a(href="#")._link Здоровье
+									a(href="#")._link Уход за младенцем
+									a(href="#")._link Соски
+									a(href="#")._link Уход за зубами
+									a(href="#")._link Аксессуары
+							._item 
+								._img 
+									img(src="img/category-home/img3.jpg")
+								a(href="#")._title
+									span._tt Красота и уход
+									include ../../img/svg/arrow-right-click.svg
+								._subject
+									a(href="#")._link Маски для лица
+									a(href="#")._link Уход за волосами
+									a(href="#")._link Уход за кожей
+									a(href="#")._link Ногти и пальцы
+							._item 
+								._img 
+									img(src="img/category-home/img4.jpg")
+								a(href="#")._title 
+									span._tt Диета, спорт и похудение 
+									include ../../img/svg/arrow-right-click.svg
+								._subject
+									a(href="#")._link Витамины
+									a(href="#")._link Протеин
+									a(href="#")._link Шапочки для плавания
+							._item 
+								._img 
+									img(src="img/category-home/img5.jpg")
+								a(href="#")._title
+									span._tt Гомеопатия и натуральные препараты
+									include ../../img/svg/arrow-right-click.svg
+								._subject
+									a(href="#")._link Услуги шамана
+									a(href="#")._link Цветы с полей
+							._item 
+								._img 
+									img(src="img/category-home/img6.jpg")
+								a(href="#")._title
+									span._tt Для животных 
+									include ../../img/svg/arrow-right-click.svg
+								._subject
+									a(href="#")._link Витамины
+									a(href="#")._link Расчески
+									a(href="#")._link Корм
+			a(href="#")._item 
+				include ../../img/category/brend.svg 
+				| Бренды
+			a(href="#")._item 
+				include ../../img/category/action.svg 
+				| Распродажа
+			a(href="#")._item 
+				include ../../img/category/info.svg 
+				| Важная информация
+			a(href="#")._item 
+				include ../../img/category/map.svg 
+				| Лечение в Германии
+
+

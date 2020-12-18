@@ -1,0 +1,273 @@
+include ../layout/_mixins
+
+doctype html
+html(lang="ru")
+	- var title = 'Main | Company name'
+	include ../layout/_head
+	
+	body
+		|
+		|
+		|
+		// Header
+		include ../layout/_header-two
+
+		|
+		|
+		|
+		.container 
+			.b-wrapper
+				._left 
+					._title Оформление
+					a(href="#")._link 
+						include ../../img/goods/star-arrow-right.svg
+						| Вернуться к корзине	
+					.b-registration 
+						._title Введите данные получателя 
+						._box 
+							._box_item 
+								label._label Имя
+								input(type="text" placeholder="Иван")._input
+							._box_item 
+								label._label Фамилия
+								input(type="text" placeholder="Васильков")._input
+						._title Выберите способ доставки
+						.b-tabs-registration 
+							._nav 
+								a(href="#registr-1")._link  Москва и МО
+								a(href="#registr-2")._link  РФ, Казахстан, Беларусь
+								a(href="#registr-3")._link  Другие страны
+								a(href="#registr-4")._link  DHL 
+							._items 
+								._item#registr-1
+									._radio_box
+										.b-custor
+											._item 
+												input._radio(type="radio" name="r" id="b-11" value="indigo")
+												label._label(for="b-11")
+													._subject Стандартная доставка в Москву и область
+													._data 
+														include ../../img/registration/data.svg
+														| От 4 до 8 дней
+													._box 
+														._price Бесплатно
+											._item 
+												input._radio(type="radio" name="r" id="b-12" value="indigo")
+												label._label(for="b-12")
+													._subject Стандартная доставка в Москву и область
+													._warnings
+														include ../../img/registration/warnings.svg 
+													._data 
+														include ../../img/registration/data.svg
+														| От 4 до 8 дней
+													._box 
+														._price €40
+											._item 
+												input._radio(type="radio" name="r" id="b-13" value="indigo")
+												label._label(for="b-13")
+													._subject Доставка в холодильнике в Москву и область
+													._data 
+														include ../../img/registration/data.svg
+														| От 4 до 8 дней
+													._box 
+														._price Бесплатно
+											._item 
+												input._radio(type="radio" name="r" id="b-14" value="indigo")
+												label._label(for="b-14")
+													._subject Срочная доставка в холодильнике в Москву и область
+													._warnings
+														include ../../img/registration/warnings.svg 
+													._data 
+														include ../../img/registration/data.svg
+														| От 4 до 8 дней
+													._box 
+														._price €40
+								._item#registr-2 
+									._radio_box
+										.b-custor
+											._item 
+												input._radio(type="radio" name="r" id="b-21" value="indigo")
+												label._label(for="b-21")
+													._subject Стандартная доставка РФ, Казахстан, Беларусь
+													._data 
+														include ../../img/registration/data.svg
+														| От 10 до 20 дней
+													._box 
+														._price Бесплатно
+											._item 
+												input._radio(type="radio" name="r" id="b-22" value="indigo")
+												label._label(for="b-22")
+													._subject Срочная доставка РФ, Казахстан, Беларусь
+													._warnings
+														include ../../img/registration/warnings.svg 
+													._data 
+														include ../../img/registration/data.svg
+														| От 4 до 8 дней
+													._box 
+														._price €40
+								._item#registr-3 
+									.b-registration 
+										._subject Куда доставить заказ?
+										._box.registration__box--margin 
+											._box_item 
+												label._label Страна
+												select(placeholder="Выберите")
+													option(value="") 
+													option(value="") Россия
+													option(value="") Беларусь
+													option(value="") Казакстан
+													option(value="") Москва
+													option(value="") Питер
+												._link 
+													._link--item Россия
+													._link--item Казахстан
+													._link--item Германия
+											._box_item 
+												label._label Город
+												input(type="text" placeholder="Москва")._input
+										._box.registration__box--margin 
+											._box_item 
+												label._label Ваша почта
+												input(type="text" placeholder="ivan@mail.ru")._input
+											._box_item 
+												label._label Почтовый индекс
+												input(type="text" placeholder="ivan@mail.ru")._input
+										._box.registration__box--margin 
+											._box_item 
+												label._label Улица
+												input(type="text" placeholder="Адрес")._input
+											._box.registration__box_box
+												._box_item 
+													label._label Дом
+													input(type="text" placeholder="")._input
+												._box_item 
+													label._label Квартира
+													input(type="text" placeholder="")._input
+								._item#registr-4
+									._radio_box
+										.b-custor
+											._item 
+												input._radio(type="radio" name="r" id="b-1" value="indigo")
+												label._label(for="b-1")
+													._title Доставка почтовым DHL отправлением с пересылкой из Германии для граждан РФ
+													._country.custor__ru 
+													._data 
+														include ../../img/registration/data.svg
+														| От 14 до 20 дней
+													._box 
+														._text.custor__text--red 
+															include ../../img/registration/error.svg 
+															| Без номера для отслеживания
+														._price € 20
+											._item 
+												input._radio(type="radio" name="r" id="b-2" value="indigo")
+												label._label(for="b-2")
+													._title Доставка почтовым DHL отправлением с пересылкой из Германии для граждан Казахстана
+													._country.custor__kaz 
+													._data 
+														include ../../img/registration/data.svg
+														| От 14 до 20 дней
+													._box 
+														._text.custor__text--red 
+															include ../../img/registration/error.svg 
+															| Без номера для отслеживания
+														._price € 20
+											._item 
+												input._radio(type="radio" name="r" id="b-3" value="indigo")
+												label._label(for="b-3")
+													._title Доставка почтовым DHL отправлением с пересылкой из Германии для граждан РФ
+													._country.custor__ru 
+													._data 
+														include ../../img/registration/data.svg
+														| От 14 до 20 дней
+													._box 
+														._text 
+															include ../../img/registration/check.svg 
+															| С номером для отслеживания
+														._price € 20
+											._item 
+												input._radio(type="radio" name="r" id="b-4" value="indigo")
+												label._label(for="b-4")
+													._title Доставка почтовым DHL отправлением с пересылкой из Германии для граждан Казахстана
+													._country.custor__kaz
+													._data 
+														include ../../img/registration/data.svg
+														| От 14 до 20 дней
+													._box 
+														._text 
+															include ../../img/registration/check.svg 
+															| С номером для отслеживания
+														._price € 20
+						._title Каким образом вы хотите оплатить заказ?
+						._heading
+							i.icon-heading
+							| Наш менеджер свяжется с вами насчет оплаты
+						.b-custor.custor--registration
+							._item 
+								input._radio(type="radio" name="r" id="b-31" value="indigo")
+								label._label(for="b-31")
+									._subject Оплата онлайн
+									._span 
+							._item 
+								input._radio(type="radio" name="r" id="b-32" value="indigo")
+								label._label(for="b-32")
+									._subject Предоплата от 20% для Москвы и МО
+									._span Курьерская доставка
+							._item 
+								input._radio(type="radio" name="r" id="b-33" value="indigo")
+								label._label(for="b-33")
+									._subject Предоплата от 20% для Регионов РФ
+									._span Доставка почтой с наложенным платежом
+							._item 
+								input._radio(type="radio" name="r" id="b-34" value="indigo")
+								label._label(for="b-34")
+									._subject Ваш способ оплаты
+									._span Предложите менеджеру удобный для вас вариант
+						._title Как с вами можно связаться?
+						._box 
+							._box_item 
+								label._label Ваш телефон
+								input(type="text" placeholder="+7 (999) 999 99-99")._input
+							._box_item 
+								label._label Ваша почта
+								input(type="text" placeholder="ivan@mail.ru")._input
+						._box 
+							._box_btn 
+								a(href="#").btn.btn--blue Продолжить
+				._right 
+					.b-stages 
+						._item.active
+							._circle 1
+							._text Корзина
+						._item 
+							._circle 2
+							._text Оформление
+						._item 
+							._circle 3
+							._text Готово
+					.b-basket-info
+						._info В корзине 2 товара на сумму € 340
+						._item 
+							._name Voltaren Schmerzgel forte • 
+								span 150g
+							._price € 170
+								span x2
+						._item 
+							._name Voltaren Schmerzgel forte Voltaren Schmer    • 
+								span 150g
+							._price € 170
+								span  
+						._btn 
+							a(href="#").btn.btn--blue Перейти в корзину
+					.b-goods-phone 
+						._text 
+							i._icon-phone 
+							._content Появился вопрос? 
+								br 
+								| Позвоните нам
+						a(href="tel:+79991242424")._phone +7 999 124-24-24
+		| 
+		|
+		|
+		// Footer
+		include ../layout/_footer

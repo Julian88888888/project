@@ -1,0 +1,1010 @@
+include ../layout/_mixins
+
+doctype html
+html(lang="ru")
+	- var title = 'Main | Company name'
+	include ../layout/_head
+	
+	body
+		include ../layout/_nav-mobile
+		.nav-scroll
+			|
+			|
+			|
+			// Header
+			include ../layout/_header
+
+			|
+			|
+			|
+			
+			// Section
+			section.b-slide-home 
+				.container 
+					._arrow 
+						._prev.arrow--style.arrow--prev
+						._next.arrow--style.arrow--next
+					._box 
+						._item 
+							img(src="img/slide-home/img1.jpg") 
+							a(href="#")._slide-btn.btn.btn--blue Подробнее
+						._item 
+							img(src="img/slide-home/img1.jpg")
+							a(href="#")._slide-btn.btn.btn--blue Подробнее
+						._item 
+							img(src="img/slide-home/img1.jpg")
+							a(href="#")._slide-btn.btn.btn--blue Подробнее
+			
+			section.b-category 
+				.container 
+					._box 
+						._item 
+							._img 
+								img(src="img/category-home/img1.jpg")
+							a(href="#")._title Медикаменты и другие товары 
+							._subject
+								a(href="#")._link Витамины
+								a(href="#")._link Мази
+						._item 
+							._img 
+								img(src="img/category-home/img2.jpg")
+							a(href="#")._title Дети и семья
+							._subject
+								a(href="#")._link Витамины
+								a(href="#")._link Мази
+						._item 
+							._img 
+								img(src="img/category-home/img3.jpg")
+							a(href="#")._title Красота и уход
+							._subject
+								a(href="#")._link Витамины
+								a(href="#")._link Мази
+						._item 
+							._img 
+								img(src="img/category-home/img4.jpg")
+							a(href="#")._title Диета, спорт и похудение 
+							._subject
+								a(href="#")._link Витамины
+								a(href="#")._link Мази
+						._item 
+							._img 
+								img(src="img/category-home/img5.jpg")
+							a(href="#")._title Натуральные продукты
+							._subject
+								a(href="#")._link Витамины
+								a(href="#")._link Мази
+						._item 
+							._img 
+								img(src="img/category-home/img6.jpg")
+							a(href="#")._title Для животных 
+							._subject
+								a(href="#")._link Витамины
+								a(href="#")._link Мази
+								a(href="#")._link Витамины
+								a(href="#")._link Мази
+			
+			section.b-advertising 
+				.container 
+					._box 
+						.b-recomend-mobile._stock 
+							._title Дарим скидки!
+							._text Немецкое качество  по доступным  ценам 
+							._img 
+								img(src="img/stock/img1.png")
+						.b-recomend-item 
+							a(href="#")._title.text-center Товар Месяца
+							._img.pos1 
+								img(src="img/stock/img1.png")
+							._text Витамины Ausgang
+						.b-recomend-item 
+							a(href="#")._title Бренды
+							a(href="#")._link Самые популярные из Германии
+							._img.pos2 
+								img(src="img/advertising/img1.png")
+						.b-recomend-item 
+							a(href="#")._title О Farmvit
+							a(href="#")._link Расскажем о работе
+							._img.pos3 
+								img(src="img/advertising/img3.png")
+
+						._item 
+							a(href="#")._title Именитые немецкие бренды
+							a(href="#")._link Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg 
+							img(src="img/advertising/img1.png")._img.pos1
+						._item 
+							a(href="#")._title Витамины для здоровья
+							a(href="#")._link Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg
+							img(src="img/advertising/img2.png")._img.pos2
+						._item 
+							a(href="#")._title Больше о Farmvit
+							._text Мы расскажем о 
+								br 
+								| принципах работы
+							a(href="#")._link Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg
+							img(src="img/advertising/img3.png")._img.pos3
+
+			section.b-recommend 
+				.container 
+					
+					._top 
+						h3.title Мы рекомендуем
+						.b-recommend-tab._tab
+							._item.active Новинки
+							._item Акции
+							._item Скоро
+							._item Популярные
+					._box 
+						._stock 
+							._title Дарим скидки!
+							._text Немецкое качество 
+								br 
+								| по доступным 
+								br 
+								| ценам 
+							._img 
+								img(src="img/stock/img1.png")
+							._btn 
+								a(href="#")._btn--style К распродаже
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+								._text (17k)
+							.b-money._money-block 
+								a(href="#")._price € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+					._more 
+						.btn.btn--more.show-more-js Загрузить ещё
+			section.b-delivery
+				.container 
+					._box 
+						._img 
+							img(src="img/delivery/img.jpg")
+						._text 
+							._title Доставим прямо домой!
+							._p Привозим лекарства прямо к вам домой за
+								br 
+								| несколько дней. При заказе от 500р. доставляем
+								| бесплатно!
+							._btn 
+								a(href="#")._btn.btn--delivery 
+									include ../../img/delivery/delivery-icon.svg
+									| Больше о доставке
+			section.b-recently 
+				.container 
+					h3.title Вы смотрели недавно
+					._box 
+						._item 
+							._img 
+								img(src="img/recently/img.png")
+							a(href="#")._name Nasenspray
+							a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+						._item 
+							._img 
+								img(src="img/recently/img.png")
+							a(href="#")._name Nasenspray
+							a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+						._item 
+							._img 
+								img(src="img/recently/img.png")
+							a(href="#")._name Nasenspray
+							a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+						._item 
+							._img 
+								img(src="img/recently/img.png")
+							a(href="#")._name Nasenspray
+							a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+						._item 
+							._img 
+								img(src="img/recently/img.png")
+							a(href="#")._name Nasenspray
+							a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte 
+			.b-advertising-two 
+				.container 
+					._box 
+						._item 
+							._title Знаменитые Немецкие 
+								br 
+								| Витамины 
+							a(href="#")._link Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg 
+							img(src="img/advertising-two/img.png")._img
+						._item 
+							._title От тревоги и стресса
+							a(href="#")._link Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg 
+							img(src="img/advertising-two/img.png")._img
+			section.b-product-section 
+				.container 
+					.b-caption._top 
+						h3.title Лучшее за неделю
+						a(href="#")._more Посмотреть все
+							include ../../img/svg/arrow-right-click.svg 
+						._arrow 
+							.slide-product__prev.arrow--style.arrow--prev
+							.slide-product__next.arrow--style.arrow--next 
+					.b-slide-product._slide
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+			
+			section.b-advertising-three
+				.container 
+					._box 
+						._item 
+							._title Знаменитые Немецкие 
+								br 
+								| Витамины
+							a(href="#")._more Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg 
+							._img 
+								img(src="img/advertising-three/img.png")
+						._item 
+							._title Знаменитые Немецкие 
+								br 
+								| Витамины
+							a(href="#")._more Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg 
+							._img 
+								img(src="img/advertising-three/img.png")
+						._item 
+							._title Знаменитые Немецкие 
+								br 
+								| Витамины
+							a(href="#")._more Посмотреть все 
+								include ../../img/svg/arrow-right-click.svg 
+							._img 
+								img(src="img/advertising-three/img.png")
+			section.b-brand
+				.container 
+					.b-caption._top 
+						h3.title Популярные бренды
+						a(href="#")._more Посмотреть все
+							include ../../img/svg/arrow-right-click.svg 
+						._arrow 
+							.slide-brand__prev.arrow--style.arrow--prev
+							.slide-brand__next.arrow--style.arrow--next 
+					._slide 
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+						._item 
+							img(src="img/brand/img.png")
+			
+			section.b-product-section 
+				.container 
+					.b-caption._top 
+						h3.title Лучшее за неделю
+						a(href="#")._more Посмотреть все
+							include ../../img/svg/arrow-right-click.svg 
+						._arrow 
+							.slide-product-one__prev.arrow--style.arrow--prev
+							.slide-product-one__next.arrow--style.arrow--next 
+					.b-slide-product-one._slide
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+						.b-product--item._item 
+							._heart 
+								include ../../img/product/heart.svg
+								include ../../img/product/heart-red.svg
+							._img 
+								img(src="img/product/img1.png")
+							a(href="#")._name Nasenspray • 155 ml 
+							a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+							.b-rating._rating 
+								._box
+									span._item.checked
+									span._item
+									span._item
+									span._item
+									span._item
+								._text (17k)
+							.b-money._money-block 
+								._price € 170 
+								._priceno € 170 
+								._btn-add 
+									include ../../img/product/cart.svg
+			|
+			|
+			|
+			// Footer
+			include ../layout/_footer

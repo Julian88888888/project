@@ -1,0 +1,71 @@
+include ../layout/_mixins
+
+doctype html
+html(lang="ru")
+	- var title = 'Main | Company name'
+	include ../layout/_head
+	
+	body
+		|
+		|
+		|
+		// Header
+		include ../layout/_header
+
+		|
+		|
+		|
+		section.b-order 
+			.container 
+				._btn 
+					a(href="#").btn.btn-blue-line Перейти на главную
+				._box 
+					.b-order--check._check
+						._icon 
+						._title Ваш заказ принят
+						._text Чек был отправлен на почту 
+						._mail anton@gmail.com
+						a(href="#")._link Неправильная почта?
+					.b-order--coming._coming
+						._box 
+							._title  К вам едет
+							a(href="#")._link Как отследить посылку?
+						._item 
+							._img 
+								img(src="img/order/img.png")
+							._right 
+								._text Voltaren Schmerzgel forte • 
+									span 150g
+								._price € 170
+						._item 
+							._img 
+								img(src="img/order/img.png")
+							._right 
+								._text Voltaren Schmerzgel forte Schmerzgel forte •
+									span 150g
+								._price € 170
+						._item 
+							._img 
+								img(src="img/order/img.png")
+							._right 
+								._text Voltaren Schmerzgel forte Schmerzgel forte Schmerzgel forte Schmerzgel forte •
+									span 150g
+								._price € 170
+					.b-order--details._details 
+						._item 
+							._icon 
+								i.icon-icon1 
+							._text Срочная доставка в Москву и в область
+						._item 
+							._icon 
+								i.icon-icon2 
+							._text Доставка почтовым DHL отправлением с пересылкой из Германии для граждан Казахстана
+						._item.order--details__item--green
+							._icon 
+								i.icon-icon3 
+							._text Вы сэкономили 30%
+		| 
+		|
+		|
+		// Footer
+		include ../layout/_footer

@@ -1,30 +1,124 @@
-////////// Default btn
-.btn
-	position: relative
-	display: inline-block
-	font-size: 14px
-	border-radius: 4px
-	color: #fff
-	text-align: center
-	text-decoration: none
-	padding: 10px 30px
-	background-color: $c1
-	border: none
-	outline: none
-	transition: all .3s ease
-	&:focus:not(.disabled),
-	&:hover:not(.disabled)
-		text-decoration: none
-	&:focus:not(.disabled),
-	&:hover:not(.disabled)
-		outline: none
-		cursor: pointer
-		color: #fff
-		background-color: lighten($c1, 10%)
-	&:active:not(.disabled)
-		background-color: darken($c1, 5%)
 
-	&.disabled
-		opacity: .4
-		
-	user-select: none
+.btn
+	&--blue
+		background: #3582C4
+		color: #F5F6F7
+		font-size: 16px
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 53px
+		transition: all .3s ease
+		&:hover
+			background: #27689E
+			color: #F5F6F7
+			transition: all .3s ease
+	&--delivery
+		width: 255px
+		height: 53px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 1px solid #ECF5FC
+		font-size: 16px
+		color: #ECF5FC
+		transition: all .3s ease
+		svg
+			transform: rotate(-15deg)
+			margin-right: 10px
+		path
+			transition: all .3s ease
+		&:hover
+			transition: all .3s ease
+			color: #A9D1F1
+			path
+				fill: #65A1D3
+	&--more
+		border: 1px solid #B6C2CC
+		width: 200px
+		height: 53px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 14px
+		color: #5E6A78
+		cursor: pointer
+		transition: all .3s ease
+		+sm
+			width: 100%
+		&:hover
+			transition: all .3s ease
+			background: #F5F6F7
+			border: 1px solid #B6C2CC
+			box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5)
+	&--basket
+		width: 199px
+		height: 53px
+		border: 1px solid #B6C2CC
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		font-size: 16px
+		line-height: 19px
+		color: #3582C4
+		padding-left: 18px
+		transition: all .3s ease
+		svg
+			margin-right: 15px
+		&:hover
+			transition: all .3s ease
+			color: #5E6A78
+			background: #F5F6F7
+			border: 1px solid #B6C2CC
+			box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5)
+	&--basket-blue
+		width: 199px
+		height: 53px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-size: 16px
+		color: #F5F6F7
+		background: #3582C4
+		&:hover
+			background: #27689E
+			color: #F5F6F7
+			transition: all .3s ease
+	&--delet
+		background: #F5F6F7
+		box-shadow: 0px 1px 1px rgba(45, 54, 62, 0.1)
+		width: 199px
+		height: 53px
+		font-size: 16px
+		color: #3582C4
+		display: flex
+		justify-content: center
+		align-items: center
+		transition: all .3s ease
+		cursor: pointer
+		.icon-delet
+			width: 16px
+			height: 19px
+			background: url("../img/basket/delet.svg") no-repeat center center
+			background-size: cover
+			margin-right: 7px
+		&:hover
+			transition: all .3s ease
+			background: #F5F6F7
+			border: 1px solid #B6C2CC
+			box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5)
+	&-blue-line
+		width: 100%
+		height: 53px
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 1px solid #3582C4
+		font-size: 16px
+		color: #3582C4
+		transition: all .3s ease
+		&:hover
+			transition: all .3s ease
+			background: #F5F6F7
+			border: 1px solid #B6C2CC
+			box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5)

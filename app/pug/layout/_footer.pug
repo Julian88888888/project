@@ -1,33 +1,36 @@
 footer.b-footer
 	.container
-		.row
-			.col
-				p Footer
+		._box
+			.b-nav-footer._nav 
+				._item 
+					a(href="#")._link Контакты
+					a(href="#")._link Всё о нас
+					a(href="#")._link Информация о заказах
+					a(href="#")._link Больше информации
+				._item 
+					a(href="#")._link Каталог
+					a(href="#")._link Бренды
+					a(href="#")._link Акции
+					a(href="#")._link Лечение в Германии
+			.b-discount._discount 
+				._text Получите уникальные скидки на ваш email. 
+					br 
+					| Дарим -10% при подписке.
+				form(action="")
+					._form 
+						input(type="text" placeholder="ivan@mail.ru")._input 
+						button._btn Получить скидку
+				._p 
+					i.icon-protection
+					| Никакого спама
 
-
-|
-|
-|
-// Request popup
-.b-mfp.-request-popup.zoom-anim-dialog.mfp-hide#request
-	form._form
-		+input('text','name','Имя','Ваше имя', true)
-		+input('text','phone','Телефон','Телефон', false)
-		button.btn Send
-		.b-form-result
-			.b-mess
-				._title Success!
-				._desc We will contact with you soon
-
-|
-|
-|
-// Success popup
-.b-mfp.-succes-popup.zoom-anim-dialog.mfp-hide#success
-	.b-form-result.-success
-		.b-mess
-			._title Success!
-			._desc We will contact with you soon
+			.b-info._info
+				a(href="tel:+79898472823")._phone +7 (989) 847 28-23
+				.b-sociol._social 
+					a(href="#")._fb 
+					a(href="#")._vk 
+					a(href="#")._in 
+				a(href="#")._link Политика обработки данных
 
 |
 |

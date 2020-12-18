@@ -1,0 +1,35 @@
+include ../layout/_mixins
+
+doctype html
+html(lang="ru")
+	- var title = 'Main | Company name'
+	include ../layout/_head
+	
+	body
+		|
+		|
+		|
+		// Header
+		include ../layout/_header
+
+		|
+		|
+		|
+		section.b-error
+			.container 
+				._box 
+					._img 
+						img(src="img/404/img.jpg")
+					._right 
+						._title Страница не найдена
+						._text Возможно вы ошиблись с адресом 
+							br
+							| или перешли по неправильной ссылке
+						._btn 
+							a(href="#").btn.btn--blue На главную
+							a(href="#").btn.btn-blue-line Назад
+		| 
+		|
+		|
+		// Footer
+		include ../layout/_footer

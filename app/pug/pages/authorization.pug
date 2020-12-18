@@ -1,0 +1,90 @@
+include ../layout/_mixins
+
+doctype html
+html(lang="ru")
+	- var title = 'Main | Company name'
+	include ../layout/_head
+	
+	body
+		|
+		|
+		|
+		// Header
+		include ../layout/_header-two
+
+		|
+		|
+		|
+		.container 
+			.b-wrapper
+				._left 
+					._title Авторизация
+					a(href="#")._link 
+						include ../../img/goods/star-arrow-right.svg
+						| Вернуться к корзине
+					.b-authorization 
+						._left 
+							._title Вход или регистрация
+							.b-tabs 
+								.tabs-nav 
+									a(href="#tab-1") По номеру телефона
+									a(href="#tab-2") С помощью пароля
+								.tabs-items 
+									#tab-1.tabs-item 
+										.b-authorization-phone 
+											input._input(type="text" placeholder="+7 999 999-99-99")
+											button.btn.btn--blue Получить код в СМС
+										.b-social-page 
+											a(href="#")._item.social-page__item_fb 
+											a(href="#")._item.social-page__item_vk
+											a(href="#")._item.social-page__item_in
+									#tab-2.tabs-item 
+										.b-tabs-one 
+											.tabs-nav-one
+												a(href="#tab-11") Регистрация
+												a(href="#tab-22") Вход
+											.tabs-items-one 
+												#tab-11.tabs-item-one 
+													._item 
+														label._label Ваша почта
+														input._input(type="text" placeholder="ivan@mail.ru")
+													._item
+														label._label Ваш пароль
+														input._input.tabs-one__input--password(type="password")
+														i.icon-eye 
+													.item
+														button.btn.btn--blue Получить код в СМС
+												#tab-22.tabs-item-one
+													._item 
+														label._label Ваша почта
+														input._input(type="text" placeholder="ivan@mail.ru")
+													._item
+														label._label Ваш пароль
+														input._input(type="password")
+													._item
+														label._label Повтирить
+														input._input(type="password")
+													.item
+														button.btn.btn--blue Получить код в СМС
+						._right 
+							._title Оформить как гость
+							._subject Без регистрации. Но, если вы хотите сохранить бонусы рекомендуем зарегистрироваться.
+							._btn 
+								a(href="#").btn.btn-blue-line  Войти как гость
+				._right 
+					.b-stages 
+						._item.active
+							._circle 1
+							._text Корзина
+						._item 
+							._circle 2
+							._text Оформление
+						._item 
+							._circle 3
+							._text Готово
+					
+		| 
+		|
+		|
+		// Footer
+		include ../layout/_footer

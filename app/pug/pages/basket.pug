@@ -1,0 +1,243 @@
+include ../layout/_mixins
+
+doctype html
+html(lang="ru")
+	- var title = 'Main | Company name'
+	include ../layout/_head
+	
+	body
+		|
+		|
+		|
+		// Header
+		include ../layout/_header-two
+
+		|
+		|
+		|
+		.container 
+			.b-wrapper
+				._left 
+					._title Моя корзина
+					a(href="#")._link 
+						include ../../img/goods/star-arrow-right.svg
+						| Вернуться в магазин
+					.b-basket-one 
+						._img 
+							img(src="img/basket-page/img.png")
+						._center 
+							._title Voltaren® Schmerzgel forte
+							._change-box 
+								._gram 150g
+								._change 
+									i.icon-change 
+									| Изменить
+							._btn 
+								.btn.btn--delet 
+									i.icon-delet 
+									| Удалить
+						._info 
+							._price-box 
+								._price-item 
+									._subject Стоимость
+									._price-price € 170
+									._price-gram € 100 / 100g
+								._price-item 
+									._subject Итого
+									._outcome € 170
+							._subject Скидка
+							._action -20%
+							._number 
+								button(type="button"   class="sub") -
+								input(class="count" type="text"   value="3" min="1" max="100")
+								button(type="button"   class="add") +
+					.b-goods-kits 
+						._item  
+							._img 
+								img(src="img/goods/img-kits.png")
+							a(href="#")._name Voltaren® Schmerzgel forte Voltaren® Schmerzgel Voltaren® Schmerzgel forte
+						._plus +
+						._item 
+							._img 
+								img(src="img/goods/img-kits.png")
+							a(href="#")._name Voltaren® Schmerzgel
+						._price 
+							.price € 170
+							.price-no € 210
+						._btn 
+							a(href="#").btn.btn--blue Купить набор
+							span._saving 
+								i.icon-saving
+								| Экономия 30%
+					.b-basket-one 
+						._img 
+							img(src="img/basket-page/img.png")
+						._center 
+							._title Voltaren® Schmerzgel forte
+							._change-box 
+								._gram 150g
+								._change 
+									i.icon-change 
+									| Изменить
+							._btn 
+								.btn.btn--delet 
+									i.icon-delet 
+									| Удалить
+						._info 
+							._price-box 
+								._price-item 
+									._subject Стоимость
+									._price-price € 170
+									._price-gram € 100 / 100g
+								._price-item 
+									._subject Итого
+									._outcome € 170
+							._subject Скидка
+							._action -20%
+							._number 
+								button(type="button"   class="sub") -
+								input(class="count" type="text"   value="3" min="1" max="100")
+								button(type="button"   class="add") +
+				._right 
+					.b-stages 
+						._item.active
+							._circle 1
+							._text Корзина
+						._item 
+							._circle 2
+							._text Оформление
+						._item 
+							._circle 3
+							._text Готово
+					.b-basket-info
+						._info В корзине 2 товара на сумму € 340
+						._item 
+							._name Voltaren Schmerzgel forte • 
+								span 150g
+							._price € 170
+								span x2
+						._item 
+							._name Voltaren Schmerzgel forte Voltaren Schmer    • 
+								span 150g
+							._price € 170
+								span  
+						._btn 
+							a(href="#").btn.btn--blue Перейти в корзину
+			section.b-product-section.basket-section
+				.b-goods-caption 
+					h3.title К вашему заказу просто замечательно подойдет
+					._subject Добавьте понравившийся товар к заказу просто нажав на плюс — 
+						i.icon-plus
+				.b-product-box-goods
+					.b-product--item._item  
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno € 170 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+
+
+
+
+
+
+
+		| 
+		|
+		|
+		// Footer
+		include ../layout/_footer

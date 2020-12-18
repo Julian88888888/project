@@ -1,0 +1,3392 @@
+body
+  position: relative
+.title
+  font-family: 'Montserrat'
+  font-weight: 600
+  font-size: 24px
+  color: #213C52
+  +md
+    font-size: 18px
+
+.rating
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  &__text
+    font-size: 12px
+    color: #8693A4
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-right: 8px
+  &__item
+    width: 13px
+    height: 13px
+    background: url("../img/product/rating-black.svg") no-repeat center center
+    margin-right: 3px
+    &.checked
+      background: url("../img/product/rating.svg") no-repeat center center
+
+.money
+  margin-top: auto
+  &__price
+    font-weight: 500
+    font-size: 24px
+    color: #213C52
+    margin-right: 14px
+    +sm
+      width: 100%
+      display: block
+      text-align: center
+      font-weight: 500
+      font-size: 20px
+      color: #ECF5FC
+      background: #3582C4
+      padding: 10px 0
+      margin-right: 0
+      &:hover
+        color: #fff
+  &__priceno
+    font-weight: 500
+    font-size: 18px
+    color: #D73135
+    text-decoration: line-through
+    +sm
+      display: none
+  &__btn-add
+    border: 1px solid #B6C2CC
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    width: 51px
+    height: 51px
+    border-radius: 90px
+    margin-left: auto
+    transition: all .3s ease
+    +sm
+      display: none
+    path
+      transition: all .3s ease
+    &:hover
+      background: #3582C4
+      border: 1px solid #B6C2CC
+      transition: all .3s ease
+      path
+        fill: #fff
+        transition: all .3s ease
+  &__btn-plus
+    font-size: 24px
+    color: #3582C4
+    transition: all .3s ease
+    &:hover
+      color: #fff
+      transition: all .3s ease
+
+.hamburger
+  width: 23px
+  height: 18px
+  display: none
+  justify-content: space-between
+  flex-direction: column
+  +lg
+    display: flex
+  &__item
+    width: 100%
+    height: 2px
+    border-radius: 15px
+    background: #B07A9E
+
+.product--item
+  position: relative
+  padding-top: 21px
+  border: 1px solid #E2E7EC
+  padding: 21px 14px 10px
+  display: flex
+  flex-direction: column
+  outline: none
+  +sm
+    padding: 15px 10px
+  &__heart
+    cursor: pointer
+    position: absolute
+    top: 16px
+    left: 16px
+    transition: all .3s ease
+    .heart-red
+      display: none
+    &:hover
+      .heart
+        display: none
+      .heart-red
+        display: block
+    &.active
+      .heart
+        display: none
+      .heart-red
+        display: block
+        path
+          fill: #D73135
+  &__img
+    text-align: center
+    margin-bottom: 14px
+    img
+      margin: 0 auto
+  &__name
+    font-size: 14px
+    color: #213C52
+    max-height: 16px
+    overflow: hidden
+    margin-bottom: 9px
+    display: block
+    transition: all .3s ease
+    +sm
+      font-size: 12px
+      margin-bottom: 6px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+  &__link
+    font-weight: 500
+    font-size: 16px
+    color: #3582C4
+    max-height: 57px
+    overflow: hidden
+    height: 100%
+    display: block
+    margin-bottom: 9px
+    transition: all .3s ease
+    +sm
+      font-size: 14px
+      margin-bottom: 11px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+  &__rating
+    margin-bottom: 9px
+  &__money-block
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+.header
+  background: #ECF5FC
+  height: 41px
+  display: flex
+  align-items: center
+
+.nav
+  display: flex
+  +sm
+    display: none
+  &__link
+    display: flex
+    font-size: 14px
+    color: #5E6A78
+    margin-right: 33px
+    &:hover
+      color: #8693A4
+
+.phone--header
+  font-size: 14px
+  color: #5E6A78
+  &:hover
+    color: #8693A4
+
+.email--header
+  font-size: 14px
+  color: #5E6A78
+  display: none
+  +sm
+    display: block
+  &:hover
+    color: #8693A4
+
+.language.open
+  .language__box--exit
+    display: block
+  .language__arrow
+    transition: all .5s ease
+    transform: rotate(180deg)
+
+.language__box--exit
+  display: none
+  .language__item
+    border-top: 1px solid #CDD3DB
+    padding: 5px 0px
+  .language__arrow
+    display: none
+
+.language
+
+  position: relative
+  +sm
+    display: none
+  &__box
+    &--exit
+      position: absolute
+      top: 24px
+      background: #F5F6F7
+  &__item
+    display: flex
+    align-items: center
+    cursor: pointer
+  &__img
+    display: flex
+    align-items: center
+  &__text
+    font-size: 16px
+    color: #5E6A78
+    margin: 0 10px
+  &__arrow
+    background: url("../img/svg/language-arrow.svg") no-repeat center center
+    width: 8px
+    height: 4px
+    transition: all .5s ease
+
+.header-top
+  display: flex
+  +sm
+    justify-content: center
+  &__nav
+    margin-right: auto
+  &__phone
+    margin-right: 33px
+
+.header-middle
+  padding: 27px 0 31px
+  display: flex
+  justify-content: flex-start
+  +lg
+    flex-wrap: wrap
+    align-items: center
+  &__logo
+    margin-right: 33px
+    +lg
+      margin: 0 auto
+  &__button-header
+    margin-left: auto
+    padding-top: 10px
+    +lg
+      margin-left: 0
+  &.header-two
+    margin-bottom: 31px
+    .user
+      margin-right: 0
+      width: auto
+      border: none
+
+.nav-scroll
+  position: relative
+  left: 0%
+  transition: all 1s ease
+  &.open
+    left: 88%
+    transition: all 1s ease
+.nav-mobile
+  position: fixed
+  height: 100vh
+  width: 88%
+  background: #FFFFFF
+  box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+  top: 0
+  left: -90%
+  z-index: 21
+  transition: all 1s ease
+  &.open
+    left: 0
+    transition: all 1s ease
+  &__top
+    padding: 30px 15px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__closed
+    cursor: pointer
+
+.logo
+  display: flex
+  &__img
+    flex: 0 0 122px
+    margin-right: 22px
+    height:
+    +lg
+      display: none
+  &__img-mobile
+    display: block
+    @media (min-width: 993px)
+      display: none
+  &__text
+    font-family: Gotham Pro
+    font-size: 12px
+    line-height: 11px
+    color: #212833
+    font-family: "Montserrat"
+    font-weight: 600
+    padding-top: 5px
+    +xl
+      display: none
+
+.search
+  width: 550px
+  +lg
+    order: 2
+    width: 100%
+    margin-top: 15px
+  &__box
+    width: 100%
+    height: 50px
+    position: relative
+    +lg
+      height: 40px
+  &__input
+    width: 100%
+    height: 100%
+    border-radius: 90px
+    border: 1.5px solid #B6C2CC
+    padding-right: 140px
+    padding-left: 22px
+    background: #fff
+    z-index: 20
+    position: relative
+    +lg
+      border: 1.5px solid #B07A9E
+      text-align: center
+      padding: 0
+  &__btn
+    background: #B07A9E url("../img/svg/search.svg") no-repeat center center
+    border-radius: 90px
+    width: 94px
+    height: 42px
+    cursor: pointer
+    border: none
+    position: absolute
+    top: 4px
+    right: 4px
+    transition: all .3s ease
+    outline: none
+    z-index: 20
+    +lg
+      display: none
+    &:hover
+      transition: all .3s ease
+      background: #B4398B url("../img/svg/search.svg") no-repeat center center
+  &__closed
+    width: 14px
+    height: 14px
+    background: url("../img/search/closed.svg") no-repeat center center
+    position: absolute
+    top: 18px
+    right: 111px
+    cursor: pointer
+    border: none
+    display: none
+    outline: none
+    z-index: 20
+    &.open
+      display: block
+  &__bottom-cat
+    margin-top: 9px
+    padding-left: 22px
+    +lg
+      display: none
+  &__item
+    font-size: 14px
+    line-height: 16px
+
+    color: #B07A9E
+    text-decoration: underline
+    text-decoration-style: dashed
+    margin-right: 15px
+  &__open-search
+    position: absolute
+    width: 100vw
+    min-height: 100px
+    background: #fff
+    left: 0
+    top: 119px
+    z-index: 10
+    box-shadow: 0px 30px 33px rgba(0, 0, 0, 0.15)
+    border-radius: 3px
+    z-index: 20
+
+.open-search
+  padding: 10px 0
+  display: none
+  &.open
+    display: block
+  &__box
+    margin-left: 220px
+    max-width: 580px
+  &__item
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 6px
+    transition: all .5s ease
+    cursor: pointer
+    &:hover
+      background: #F5F6F7
+      border-radius: 5px
+      transition: all .5s ease
+  &__img
+    width: 40px
+    height: 40px
+    margin-right: 8px
+  &__name
+    font-weight: 500
+    font-size: 14px
+    color: #213C52
+    margin-right: 5px
+    max-width: 313px
+  &__category
+    font-size: 14px
+    color: #213C52
+    margin-right: 10px
+  &__pictory
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-right: 15px
+  .icon-hart
+    width: 12px
+    height: 10px
+    background: url("../img/search/hart.svg") no-repeat center center
+    display: block
+    margin: 0 5px
+  .icon-start
+    width: 17px
+    height: 17px
+    background: url("../img/search/star.svg") no-repeat center center
+    display: block
+    margin: 0 5px
+  &__signature
+    font-size: 12px
+    line-height: 14px
+    color: #B07A9E
+
+.overlflov-search
+  &.active
+    position: fixed
+    top: 0
+    left: 0
+    background: rgba(0,0,0,0.5)
+    width: 100%
+    height: 100%
+    z-index: 19
+
+.button-header
+  display: flex
+  align-items: flex-start
+  &__basket
+    margin-right: 30px
+    +lg
+      margin-right: 0
+
+.heart
+  +lg
+    display: none
+
+.user
+  width: 130px
+  border-right: 1px solid #DEE4E9
+  margin-right: 40px
+  position: relative
+  +lg
+    margin-right: 20px
+    border-right: none
+    display: none
+  &__click
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    cursor: pointer
+  &__img
+    margin-right: 13px
+  &__text
+    display: flex
+    align-items: center
+    font-size: 16px
+    color: #5E6A78
+  &__arrow
+    background: url("../img/svg/language-arrow.svg") no-repeat center center
+    width: 8px
+    height: 4px
+    transition: all .5s ease
+    margin-left: 13px
+  &__popup
+    width: 194px
+    position: absolute
+    background: #FFFFFF
+    border: 1px solid #DEE4E9
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+    top: 37px
+    left: -2px
+    z-index: 11
+
+.popup-user
+  padding: 20px
+  &-entry
+    .popup-user__item
+      font-size: 16px
+      color: #5E6A78
+      display: block
+      transition: all .3s ease
+      &:hover
+        color: #1D496F
+        transition: all .3s ease
+    .popup-user__item + .popup-user__item
+      margin-top: 23px
+  &-user
+    .popup-user__title
+      font-weight: 500
+      font-size: 16px
+      color: #212833
+      margin-bottom: 16px
+    .popup-user__item
+      font-size: 16px
+      color: #3582C4
+      transition: all .3s ease
+      display: block
+      margin-bottom: 12px
+      &:hover
+        color: #C78AB2
+        transition: all .3s ease
+    .popup-user__logOff
+      font-size: 16px
+      color: #8693A4
+      padding-top: 11px
+      display: block
+      border-top: 1px solid #DEE4E9
+      transition: all .3s ease
+      &:hover
+        color: #3582C4
+        transition: all .3s ease
+
+.basket
+  position: relative
+
+  &__box
+    cursor: pointer
+  &__quantity
+    height: 21px
+    min-width: 21px
+    border-radius: 90px
+    background: #B07A9E
+    display: none
+    justify-content: center
+    align-items: center
+    font-weight: 500
+    font-size: 12px
+    color: #FFFFFF
+    position: absolute
+    right: -10px
+    top: -10px
+    padding: 0 5px
+  &.active
+    .basket__quantity
+      display: flex
+    .basket-svg
+      fill: #B07A9E
+  &__popup
+    width: 295px
+    position: absolute
+    background: red
+    z-index: 11
+    top: 37px
+    left: -177px
+    background: #FFFFFF
+    border: 1px solid #DEE4E9
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+    display: none
+    +sm
+      display: none !important
+
+  &.active
+
+    .popup-basket
+      display: block
+
+.popup-basket
+  &:after
+    position: absolute
+    content: ''
+    left: 182px
+    top: -19px
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 10px
+    border-color: transparent transparent transparent#FFFFFF
+    transform: rotate(-90deg)
+  &__wrap
+    padding: 16px 10px
+    max-height: 377px
+    overflow-y: auto
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      width: 8px
+      height: 120px
+    &::-webkit-scrollbar-track
+      box-shadow: inset 0 0 5px #F5F6F7
+      border-radius: 10px
+    &::-webkit-scrollbar-thumb
+      background: #C8D1D9
+      border-radius: 10px
+    &::-webkit-scrollbar-thumb:hover
+      background: #C8D1D9
+  &__botton
+    padding: 14px 12px
+    background: #F5F6F7
+  &__info
+    font-size: 14px
+    color: #212833
+    text-align: center
+    margin-bottom: 14px
+  &__item
+    display: flex
+    padding: 9px 0
+  .popup-basket__item + .popup-basket__item
+    border-top: 1px solid #DEE4E9
+  &__img
+    width: 57px
+    height: 46px
+  &__box
+    width: calc(100% - 57px)
+    &-bottom
+      display: flex
+      align-items: center
+  &__name
+    font-size: 14px
+    color: #212833
+    display: block
+    margin-bottom: 11px
+    transition: all .3s ease
+    -webkit-line-clamp: 2
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    overflow: hidden
+    &:hover
+      color: #3582C4
+      transition: all .3s ease
+  &__price
+    font-weight: 500
+    font-size: 16px
+    color: #213C52
+    margin-right: 7px
+  &__price-no
+    font-weight: 500
+    font-size: 14px
+    color: #8693A4
+    text-decoration: line-through
+  &__delete
+    cursor: pointer
+    margin-left: 16px
+    height: 18px
+    transition: all .3s ease
+    &:hover
+      opacity: 0.5
+      transition: all .3s ease
+  &__number
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 80px
+    margin-left: auto
+    button
+      width: 24px
+      height: 24px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 22px
+      color: #213C52
+      border-radius: 50%
+      ontline: none
+      background: #DEE4E9
+      border: none
+      cursor: pointer
+      padding: 0
+      font-size: 16px
+      transition: all .3s ease
+      &:focus
+        outline: none
+      &:hover
+        background: #CDD3DB
+        transition: all .3s ease
+        color: #3582C4
+      &.dis
+        opacity: 0.4
+      &:disabled
+        opacity: 0.4
+    .count
+      width: 20px
+      padding: 0
+      border: none
+      text-align: center
+      font-size: 16px
+      color: #213C52
+
+.subnav
+  background: #fff
+  box-shadow: 0px 30px 33px rgba(0, 0, 0, 0.15)
+  position: absolute
+  top: 74px
+  left: 0
+  width: 100%
+  z-index: 10
+  padding-top: 70px
+  display: none
+  &__box
+    display: flex
+    justify-content: space-around
+    padding-bottom: 36px
+  &__item
+    max-width: 152px
+  &__img
+    margin-bottom: 12px
+  &__title
+    font-size: 16px
+    display: block
+    margin-bottom: 12px
+    color: #27689E
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    transition: all .5s ease
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+      path
+        fill: #C78AB2 !important
+        transition: all .3s ease
+    svg
+      width: 13px
+      position: relative
+      top: -5px
+      transition: all .3s ease
+  &__tt
+    width: calc(100% - 23px)
+  &__subject
+  &__link
+    color: #8693A4
+    font-size: 14px
+    margin-right: 11px
+    display: block
+    margin-bottom: 8px
+
+    &:hover
+      color: #C78AB2
+
+.clic-catalog-js.open + .subnav
+  display: block
+
+.category-header
+  position: relative
+  +lg
+    display: none
+  &__box
+    background: #F5F6F7
+    border: 1px solid #DEE4E9
+
+    box-shadow: 0px 1px 1px rgba(45, 54, 62, 0.1)
+    border-radius: 5px
+    width: 100%
+    height: 68px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 46px
+  &__item
+    display: flex
+    align-items: center
+    margin: 0 38px
+    color: #5E6A78
+    font-size: 16px
+    transition: all .3s ease
+    cursor: pointer
+    .clic-catalog-js
+      display: flex
+      align-items: center
+      color: #5E6A78
+      font-size: 16px
+      transition: all .3s ease
+      cursor: pointer
+    .clic-catalog-js.open
+      transition: all .3s ease
+      color: #1D496F
+      path
+        fill: #1D496F
+    &:hover
+      transition: all .3s ease
+      color: #1D496F
+      path
+        fill: #1D496F
+    svg
+      margin-right: 10px
+    +xl
+      margin: 0 15px
+
+.slide-home
+  position: relative
+  margin-bottom: 64px
+  +sm
+    margin-bottom: 30px
+  .container
+    position: relative
+  &__box
+    position: relative
+  .arrow--style
+    position: absolute
+    top: 50%
+    margin-top: -21px
+
+  .arrow--prev
+    left: -21px
+    +sm
+      display: none !important
+  .arrow--next
+    right: -21px
+    +sm
+      display: none !important
+  &__item
+    position: relative
+    outline: none
+  &__slide-btn
+    width: 171px
+    position: absolute
+    bottom: 76px
+    left: 122px
+    +xl
+      bottom: 30px
+    +sm
+      display: none
+
+.category
+  margin-bottom: 32px
+  &__box
+    display: flex
+    justify-content: space-around
+    background: linear-gradient(0deg, rgba(29,73,111,1) 61%, rgba(255,255,255,1) 61%)
+    box-shadow: 0px 10px 10px rgba(29, 73, 111, 0.25)
+    padding-bottom: 36px
+    +lg
+      padding: 15px 0 0
+      background: #ECF5FC
+      flex-wrap: wrap
+    +sm
+      box-shadow: none
+  &__item
+    max-width: 152px
+    +lg
+      margin-bottom: 15px
+    +sm
+      width: 30%
+  &__img
+    margin-bottom: 12px
+  &__title
+    font-size: 16px
+    color: #ECF5FC
+    min-height: 38px
+    display: block
+    marign-bottom: 7px
+    +lg
+      color: #213C52
+      text-align: center
+    +sm
+      font-size: 12px
+    &:hover
+      color: #C78AB2
+  &__subject
+    overflow: hidden
+    +lg
+      display: none
+  &__link
+    color: #A9D1F1
+    font-size: 14px
+    margin-right: 11px
+
+    &:hover
+      color: #C78AB2
+
+.recomend-mobile
+  background: #3582C4
+  box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+  display: none
+  width: 48%
+  padding: 20px 15px 15px 15px
+  margin: 0 1% 5px 1%
+  &__title
+    font-weight: 600
+    font-size: 16px
+    color: #ECF5FC
+    text-align: center
+    margin-bottom: 7px
+  &__text
+    font-size: 12px
+    text-align: center
+    color: #ECF5FC
+    margin-bottom: 24px
+  &__img
+    width: 88px
+    margin: 0 auto
+  +md
+    display: block
+
+.text-center
+  text-align: center
+
+.recomend-item
+  width: 48%
+  padding: 20px 15px
+  background: #ECF5FC
+  box-shadow: 0px 1px 1px rgba(45, 54, 62, 0.1)
+  margin: 0 1% 5px 1%
+  position: relative
+  min-height: 167px
+  display: none
+  +md
+    display: block
+  &__title
+    font-weight: 600
+    font-size: 16px
+    color: #1D496F
+    display: block
+    &:hover
+      color: #C78AB2
+  &__text
+    font-size: 12px
+    color: #212833
+    text-align: center
+  &__link
+    font-size: 12px
+    color: #27689E
+    margin-top: 6px
+    display: block
+    &:hover
+      color: #C78AB2
+  .pos1
+    width: 88px
+    margin: 28px auto 17px
+  .pos2
+    position: absolute
+    bottom: 15px
+    right: 11px
+    width: 100px
+  .pos3
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 109px
+    @media (max-width: 490px)
+      width: 85px
+
+.advertising
+  margin-bottom: 62px
+  +md
+    margin-bottom: 50px
+  &__box
+    display: flex
+    +md
+      flex-wrap: wrap
+      justify-content: center
+
+  &__item
+    flex: 1
+    border: 1px solid #DDEDFF
+    min-height: 180px
+    margin: 0 3px
+    padding: 23px 0 0 20px
+    position: relative
+    +md
+      display: none
+  &__title
+    font-size: 16px
+    color: #5E6A78
+    display: block
+    transition: all .3s ease
+    margin-bottom: 6px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+  &__text
+    margin-bottom: 6px
+    font-size: 14px
+    color: #8693A4
+  &__link
+    font-size: 14px
+    color: #27689E
+    transition: all .3s ease
+    svg
+      margin-left: 9px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+      path
+        fill: #C78AB2
+        transition: all .3s ease
+  &__img
+    position: absolute
+    +xl
+      width: 40%
+    &.pos1
+      bottom: 31px
+      right: 34px
+    &.pos2
+      bottom: 22px
+      right: 36px
+    &.pos3
+      right: 11px
+      bottom: 0
+
+.recommend-tab
+  display: flex
+  justify-content: space-around
+  align-items: center
+  background: #F5F6F7
+  border: 1px solid #DEE4E9
+  height: 49px
+  position: relative
+  +md
+    display: none
+  &__item
+    cursor: pointer
+    font-size: 16px
+    color: #5E6A78
+    position: relative
+    transition: all .3s ease
+    &:hover
+      color: #8693A4
+      transition: all .3s ease
+    &.active
+      &:after
+        position: absolute
+        width: 100%
+        height: 5px
+        content: ""
+        background: #3582C4
+        bottom: -13px
+        left: 0
+
+.recommend
+  +md
+    margin-bottom: 30px
+  .title
+    margin: 0
+  &__tab
+    width: 450px
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 32px
+
+  &__box
+    display: flex
+    margin-bottom: 16px
+    justify-content: flex-start
+    flex-wrap: wrap
+    @media (max-width: 768px)
+      justify-content: center
+  &__more
+    .btn
+      margin: 0 auto
+  &__stock
+    max-width: 247px
+    width: 20%
+    background: #3582C4
+    box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+    padding: 36px 28px 28px
+    +xl
+      width: 25%
+    +lg
+      width: 33.33%
+    @media (max-width: 768px)
+      width: 50%
+    +md
+      display: none
+  &__title
+    font-family: 'Montserrat'
+    font-weight: 600
+    font-size: 18px
+    color: #ECF5FC
+    margin-bottom: 12px
+  &__text
+    font-size: 16px
+    color: #ECF5FC
+    margin-bottom: 50px
+  &__img
+    text-align: center
+    margin-bottom: 42px
+  &__btn
+    &--style
+      height: 53px
+      background: #ECF5FC
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 16px
+      color: #1D496F
+  &__item
+    max-width: 247px
+    width: 20%
+    +xl
+      width: 25%
+    +lg
+      width: 33.33%
+    @media (max-width: 768px)
+      width: 50%
+
+.delivery
+  height: 315px
+  background: #213C52
+  position: relative
+  margin: 114px 0
+  +md
+    display: none
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__img
+    width: 624px
+    margin-right: 44px
+    img
+      width: 100%
+      position: relative
+      top: -50px
+      filter: drop-shadow(0px 4px 50px rgba(22, 44, 78, 0.5))
+      +lg
+        top: 0
+  &__text
+    position: relative
+    top: -50px
+    +lg
+      top: 0
+  &__title
+    font-weight: 600
+    font-size: 36px
+    color: #ECF5FC
+    font-family: "Montserrat"
+    margin-bottom: 16px
+  &__p
+    font-size: 16px
+    color: #A9D1F1
+    margin-bottom: 23px
+  &__btn
+
+.recently
+  margin-bottom: 64px
+  .title
+    margin-bottom: 32px
+  &__box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    +lg
+      justify-content: center
+  &__item
+    flex: 1
+    max-width: 238px
+    border: 1px solid #E2E7EC
+    padding: 23px 14px 14px
+    +lg
+      flex: none
+      max-width: 235px
+    +sm
+      width: 50%
+    @media (max-width: 420px)
+      width: 100%
+      max-width: 100%
+  &__img
+    text-align: center
+    padding: 0px 0 30px
+  &__name
+    font-size: 14px
+    color: #213C52
+    display: block
+    transition: all .3s ease
+    margin-bottom: 9px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+  &__title
+    font-weight: 500
+    font-size: 16px
+    color: #3582C4
+    transition: all .3s ease
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+
+.advertising-two
+  margin-bottom: 64px
+  &__box
+    display: flex
+  &__item
+    flex: 1
+    height: 318px
+    background: #F9FCFF
+    border: 1px solid #ECF5FF
+    box-shadow: 0px 1px 1px rgba(45, 54, 62, 0.1)
+    padding: 35px 33px
+    position: relative
+  &__title
+    font-weight: 500
+    font-size: 24px
+    color: #000000
+    margin-bottom: 12px
+  &__link
+    font-size: 16px
+    color: #27689E
+    transition: all .3s ease
+    svg
+      margin-left: 9px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+      path
+        fill: #C78AB2
+        transition: all .3s ease
+  &__img
+    position: absolute
+    right: 37px
+    bottom: 32px
+
+    +xl
+      right: 1px
+      bottom: 1px
+  &__item + &__item
+    margin-left: 20px
+
+.caption
+  display: flex
+  justify-content: flex-start
+  align-items: flex-end
+  margin-bottom: 32px
+  .title
+    margin: 0
+  &__more
+    margin-left: 32px
+    transition: all .3s ease
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+      path
+        fill: #C78AB2
+    svg
+      margin-left: 10px
+      transition: all .3s ease
+  &__arrow
+    margin-left: auto
+    display: flex
+  .arrow--next
+    margin-left: 5px
+
+.product-section
+  margin-bottom: 36px
+
+.advertising-three
+  margin-bottom: 64px
+  &__box
+    display: flex
+    flex-wrap
+  &__item
+    flex: 1
+    max-width: 398px
+    padding: 30px
+    background: #F9FCFF
+    border: 1px solid #ECF5FF
+    box-shadow: 0px 1px 1px rgba(45, 54, 62, 0.1)
+  &__item + &__item
+    margin-left: 20px
+    margin-right: 20px
+  &__title
+    text-align: center
+    font-weight: 600
+    font-size: 24px
+    color: #213C52
+
+    font-family: "Montserrat"
+    margin-bottom: 17px
+  &__more
+    font-size: 14px
+    color: #27689E
+    transition: all .3s ease
+    text-align: center
+    display: block
+    margin-bottom: 83px
+    svg
+      margin-left: 9px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+      path
+        fill: #C78AB2
+        transition: all .3s ease
+  &__img
+    text-ailgn: center
+
+.brand
+  margin-bottom: 64px
+  &__slide
+  &__item
+    border: 1px solid #DDEDFF
+    text-align: center
+    padding: 15px 0
+    outline: none
+    img
+      margin: 0 auto
+  &__slide-one
+    .brand__item
+      border: 1px solid #DDEDFF
+      text-align: center
+      padding: 15px 0
+      outline: none
+      img
+        margin: 0 auto
+
+.brand-page
+  &__title
+    font-weight: 600
+    font-size: 24px
+    color: #213C52
+    font-family: "Montserrat"
+    text-align: center
+    margin-bottom: 26px
+  &__box
+    display: none
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-bottom: 16px
+  &__item
+    flex: 1
+    max-width: 198px
+    border: 1px solid #DDEDFF
+    text-align: center
+    padding: 15px 0
+    img
+      margin: 0 auto
+  &__more
+    margin-bottom: 64px
+    .btn
+      margin: 0 auto
+  &__alphabet
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 32px
+    &_text
+      font-size: 24px
+      color: #8693A4
+      font-family: "GothamPro"
+      font-size: 24px
+      color: #8693A4
+      margin: 10px
+      cursor: pointer
+  &__search
+    margin-bottom: 32px
+    &_input
+      width: 100%
+      height: 44px
+      border: 1.5px solid #B6C2CC
+      text-align: center
+
+.output
+  &__item
+    border-top: 1px solid #E2E7EC
+    padding-top: 32px
+    display: flex
+    padding-bottom: 32px
+  &__letter
+    font-size: 24px
+    font-family: "GothamPro"
+    color: #3582C4
+  &__box
+    display: flex
+    justify-content: flex-start
+    flex-wrap: wrap
+    width: calc(100% - 136px)
+    margin-left: auto
+    span
+      font-size: 16px
+      color: #212833
+      min-width: 220px
+      margin-bottom: 20px
+
+.breadcrumbs
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  a
+    display: flex
+    align-items: center
+    font-size: 16px
+    color: #5E6A78
+    margin-right: 10px
+    transition: all .3s ease
+    &:hover
+      color: #B07A9E
+      transition: all .3s ease
+  i
+    margin-left: 10px
+    background: url("../img/breadcrumbs/breadcrumbs-arrow.svg") no-repeat center center
+    width: 13px
+    height: 8px
+    display: block
+  span
+    font-size: 16px
+    color: #5E6A78
+
+.sidebar
+  &__title-link
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    font-weight: 600
+    font-size: 16px
+    color: #213C52
+    font-family: "Montserrat"
+    transition: all .3s ease
+    margin-bottom: 16px
+    &:hover
+      color: #B07A9E
+      transition: all .3s ease
+  &__start
+    width: 21px
+    height: 21px
+    background: url("../img/category-page/start.svg") no-repeat center center
+    display: block
+    margin-left: 7px
+  &__icon-arrow-right
+    width: 13px
+    height: 8px
+    background: url("../img/category-page/arrow-right.svg") no-repeat center center
+    display: block
+    margin-left: 7px
+  &__item
+  &__hidden-box
+    transition: max-height 1s ease
+    &.open
+      max-height: inherit
+      transition: max-height 1s ease
+  &__link
+    font-size: 16px
+    color: #5E6A78
+    margin-bottom: 9px
+    transition: all .3s ease
+    display: block
+    &:hover
+      color: #B07A9E
+      transition: all .3s ease
+  &__more
+    font-size: 16px
+    color: #27689E
+    display: flex
+    align-items: center
+    cursor: pointer
+    margin-bottom: 26px
+    .icon-arrow-top
+      width: 10px
+      height: 6px
+      background: url("../img/category-page/arrow-more.svg")
+      margin-left: 9px
+    &.open
+      .icon-arrow-top
+        transform: rotate(180deg)
+
+.category-page
+  .breadcrumbs
+    margin-bottom: 32px
+  &__title
+    font-weight: 600
+    font-size: 36px
+    color: #213C52
+    font-family: "Montserrat"
+    margin-bottom: 38px
+  &__wrap
+    display: flex
+  &__sidebar
+    padding-top: 21px
+    width: 243px
+  &__content
+    width: 992px
+  .title
+    font-size: 18px
+  .caption__more
+    font-size: 14px
+  .advertising-two__link
+    font-size: 14px
+
+.nav-footer
+  display: flex
+  &__item
+  &__item + &__item
+    margin-left: 63px
+  &__link
+    font-size: 16px
+    color: #ECF5FC
+    transition: all .3s ease
+    display: block
+    margin-bottom: 18px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+
+.discount
+  &__text
+    font-size: 16px
+    color: #ECF5FC
+    margin-bottom: 30px
+    position: relative
+    &:after
+      position: absolute
+      left: -30px
+      top: 0
+      content: ""
+      width: 15px
+      height: 15px
+      background: url("../img/footer/icon1.svg") no-repeat center center
+  &__form
+    display: flex
+    margin-bottom: 12px
+  &__input
+    border: 1.5px solid #65A1D3
+    border-radius: 3px
+    width: 263px
+    height: 44px
+    padding-left: 13px
+    margin-right: 5px
+    font-size: 16px
+    color: #65A1D3
+    background: rgba(0,0,0,0)
+  &__btn
+    background: #B07A9E
+    border-radius: 3px
+    width: 162px
+    height: 44px
+    border: none
+    cursor: pointer
+    font-size: 16px
+    color: #FFFFFF
+    transition: all .3s ease
+    &:hover
+      background: #A8EBE8
+      color: #B07A9E
+      transition: all .3s ease
+  &__p
+    font-size: 16px
+    color: #A8EBE8
+    .icon-protection
+      width: 13px
+      height: 15px
+      background: url("../img/footer/icon2.svg") no-repeat center center
+      margin-right: 6px
+      display: inline-block
+
+.info
+  margin-left: auto
+  text-align: right
+  padding-top: 14px
+  &__phone
+    font-size: 16px
+    color: #ECF5FC
+    transition: all .3s ease
+    display: block
+    margin-bottom: 14px
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+  &__social
+    margin-bottom: 25px
+  &__link
+    font-size: 16px
+    color: #ECF5FC
+    transition: all .3s ease
+    display: block
+    &:hover
+      color: #C78AB2
+      transition: all .3s ease
+
+.sociol
+  display: flex
+  justify-content: flex-end
+  a
+    width: 49px
+    height: 49px
+    border-radius: 90px
+    display: block
+    margin-left: 14px
+    transition: all .3s ease
+  &__fb
+    background: #B07A9E url("../img/footer/fx.svg") no-repeat center center
+    &:hover
+      background: #A8EBE8 url("../img/footer/fx.svg") no-repeat center center
+      transition: all .3s ease
+  &__vk
+    background: #B07A9E url("../img/footer/vk.svg") no-repeat center center
+    &:hover
+      background: #A8EBE8 url("../img/footer/vk.svg") no-repeat center center
+      transition: all .3s ease
+  &__in
+    background: #B07A9E url("../img/footer/in.svg") no-repeat center center
+    &:hover
+      background: #A8EBE8 url("../img/footer/in.svg") no-repeat center center
+      transition: all .3s ease
+
+.footer
+  margin-top: 124px
+  padding: 35px 0 64px
+  background: #1D496F
+  &__box
+    display: flex
+  &__nav
+    padding-top: 14px
+  &__discount
+    margin-left: 90px
+
+.search-page
+  .breadcrumbs
+    margin-bottom: 53px
+  &__box
+    display: flex
+  &__sidebar
+    width: 243px
+  &__content
+    width: calc(100% - 263px)
+    margin-left: auto
+
+.price-filter
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 17px
+  input
+    width: 119px
+    height: 38px
+    border: 1.5px solid #CDD3DB
+    border-radius: 5px
+    padding: 0 30px 0 10px
+    font-size: 16px
+    color: #27689E
+
+.search-sidebar
+  &__item
+    padding-bottom: 32px
+    border-bottom: 1px solid  #DEE4E9
+    margin-bottom: 32px
+  &__list-item
+    cursor: pointer
+    margin-bottom: 10px
+  &__title
+    font-weight: 600
+    font-size: 16px
+    color: #213C52
+    margin-bottom: 23px
+  &__more
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    font-size: 16px
+    color: #27689E
+    cursor: pointer
+    span
+      margin-left: 7px
+      &.active + .icon-arrow
+        transform: rotate(180deg)
+        transition: all .3s ease
+    .icon-arrow
+      transition: all .3s ease
+      transform: rotate(0deg)
+      display: block
+      margin-left: 13px
+      width: 10px
+      height: 6px
+      background: url("../img/search-page/arrow-sidebar.svg") no-repeat center center
+  .radio
+    margin-bottom: 11px
+  &__search
+    margin-bottom: 40px
+  .search-input
+    width: 243px
+    height: 44px
+    border: 1.5px solid #B6C2CC
+    border-radius: 3px
+    font-size: 16px
+    color: #27689E
+    padding: 0 30px 0 15px
+  &__str
+    font-weight: 500
+    font-size: 16px
+    color: #000000
+    margin-bottom: 12px
+  &__scroll
+    max-height: 257px
+    overflow: hidden
+    overflow-y: auto
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      width: 8px
+      height: 120px
+    &::-webkit-scrollbar-track
+      box-shadow: inset 0 0 5px #F5F6F7
+      border-radius: 10px
+    &::-webkit-scrollbar-thumb
+      background: #C8D1D9
+      border-radius: 10px
+    &::-webkit-scrollbar-thumb:hover
+      background: #C8D1D9
+
+.filter
+  &__box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 50px
+  &__title
+    font-weight: 600
+    font-size: 24px
+    color: #213C52
+  &__btn
+    display: flex
+    width: 762px
+    justify-content: space-between
+    align-items: center
+
+  &__click
+    display: flex
+    align-items: center
+    cursor: pointer
+    font-size: 16px
+
+    color: #8693A4
+    &.active
+      color: #3582C4
+      path
+        stroke: #3582C4
+        fill: #3582C4
+    svg
+      margin-right: 10px
+
+.filter
+  &__item
+    border: 1px solid #DEE4E9
+    border-radius: 3px
+    padding: 29px 25px 26px 6px
+    display: flex
+    position: relative
+  &__img
+    width: 234px
+    height: 234px
+    margin-right: 9px
+  &__text
+    width: 363px
+  &__cat
+    font-size: 18px
+    color: #213C52
+    margin-bottom: 12px
+  &__name
+    font-weight: 500
+    font-size: 24px
+    line-height: 28px
+    color: #3582C4
+    transition: all .3s ease
+    display: block
+    margin-bottom: 24px
+    &:hover
+      color: #B07A9E
+      transition: all .3s ease
+  &__info
+    margin-left: auto
+  &__in
+    font-size: 16px
+    color: #5E6A78
+    margin-bottom: 16px
+  &__ser
+    font-size: 16px
+    color: #8693A4
+  &__cont
+    display: flex
+    position: relative
+    margin-bottom: 8px
+  &__price
+    font-weight: 500
+    font-size: 24px
+    color: #213C52
+    margin-right: 13px
+  &__siz
+    font-size: 16px
+    color: #5E6A78
+    position: relative
+    top: 5px
+  &__price-no
+    text-decoration: line-through
+    color: #D73135
+    font-weight: 500
+    font-size: 18px
+    margin-right: 20px
+  &__action
+    background: #D73135
+    font-weight: 500
+    font-size: 14px
+    color: #FFFFFF
+    line-height: 21px
+    padding: 0 5px
+  .icon-basket
+    width: 22px
+    height: 19px
+    background: url("../img/search-page/basket.svg")
+    display: inline-block
+    margin-right: 10px
+  &__btn-basket
+    margin-bottom: 7px
+    margin-top: 20px
+  &__btn-detail
+    margin-bottom: 17px
+    .btn
+      font-size: 16px
+      color: #3582C4
+  &__star
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__rating
+    display: flex
+    align-items: center
+    .rating__item
+      width: 19px
+      height: 19px
+      background: url(../img/search-page/star.svg) no-repeat center center
+      margin-right: 3px
+      &.checked
+        background: url(../img/search-page/star.svg) no-repeat center center
+  &__star-text
+    font-size: 14px
+    color: #8693A4
+  .pagination
+    margin-top: 65px
+
+.pagination
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__arrow
+    background: #F5F6F7
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 42px
+    height: 42px
+    transition: all .3s ease
+    &:hover
+      background: #27689E
+      transition: all .3s ease
+  &__left
+    transform: rotate(180deg)
+  .icon-arrow
+    background: url("../img/search-page/pagination.svg") no-repeat center center
+    width: 12px
+    height: 20px
+    display: block
+  &__number
+    width: 42px
+    height: 42px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 16px
+    color: #213C52
+    border: 1px solid #B6C2CC
+    margin: 0 4px
+    transition: all .3s ease
+    &:hover
+      background: #F5F6F7
+      border: 1px solid #B6C2CC
+      box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5)
+      transition: all .3s ease
+  &__select
+    select
+      width: 215px
+      height: 53px
+      border: 1px solid #B6C2CC
+      font-size: 16px
+      color: #213C52
+      padding: 0 19px
+      outline: none
+      background: #fff url("../img/search-page/select.svg") no-repeat 90% center
+      background-size: 10px 6px
+      appearance: none
+      &:focus
+        outline: none
+
+.goods-slide-for
+  margin-bottom: 51px
+  &__item
+    outline: none
+.goods-slide-nav
+  position: relative
+  &__box
+  &__item
+    outline: none
+    border: 1px solid #E2E7EC
+    margin: 0 4px
+  &__arr
+    width: 42px
+    height: 42px
+    position: absolute
+    top: 50%
+    margin-top: -21px
+    background: #F5F6F7
+    cursor: pointer
+    transition: all .3s ease
+    &:hover
+      box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.5)
+      transition: all .3s ease
+  &__prev
+    background: #F5F6F7 url("../img/goods/slide-arrow-left.svg") no-repeat center center
+    left: -56px
+  &__next
+    background: #F5F6F7 url("../img/goods/slide-arrow-right.svg") no-repeat center center
+    right: -56px
+  &__arrow
+
+.goods
+  .breadcrumbs
+    margin-bottom: 35px
+  &__box
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+  &__left
+    width: 385px
+    padding-top: 27px
+  &__right
+    width: 750px
+  &-content
+    display: flex
+    justify-content: space-between
+    margin-bottom: 40px
+    &__left
+      width: 274px
+    &__right
+      width: 444px
+      padding-top: 30px
+    &__name
+      font-size: 18px
+      color: #213C52
+      margin-bottom: 6px
+    &__title
+      font-weight: 500
+      font-size: 24px
+      color: #213C52
+      margin-bottom: 6px
+    &__cod
+      font-size: 14px
+      line-height: 16px
+      color: #8693A4
+      margin-bottom: 24px
+      span
+        margin-left: 13px
+    &__cat
+      font-size: 16px
+      line-height: 19px
+      color: #3582C4
+      margin-bottom: 10px
+    &__text
+      font-size: 16px
+      color: #5E6A78
+      margin-bottom: 24px
+    &__rating
+      margin-bottom: 23px
+    &__btn
+    .btn-rating
+      font-size: 14px
+      color: #8693A4
+      display: flex
+      align-items: center
+      transition: all .3s ease
+      text-decoration: underline
+      margin-bottom: 35px
+      &:hover
+        color: #B07A9E
+        transition: all .3s ease
+        path
+          fill: #B07A9E
+      svg
+        margin-left: 5px
+
+.rating-goods
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  &__text
+    font-size: 14px
+    color: #8693A4
+    margin-left: 10px
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__item
+    width: 19px
+    height: 19px
+    background: url("../img/goods/start-start-black.svg") no-repeat center center
+    background-size: cover
+    margin: 0 3px
+    &.checked
+      background: url("../img/goods/start-start.svg") no-repeat center center
+      background-size: cover
+
+.basket-number
+  margin-bottom: 38px
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__select
+    margin-left: auto
+    margin-right: 9px
+    select
+      width: 66px
+      height: 53px
+      border: 1px solid #B6C2CC
+      padding: 0 0px 0 20px
+      text-align: cenetr
+      background: #fff url(../img/search-page/select.svg) no-repeat 70% center
+      appearance: none
+      outline: none
+      transition: all .3s ease
+      &:hover
+        border: 1px solid #5E6A78
+        transition: all .3s ease
+
+.goods-product
+  margin-bottom: 30px
+  &__item
+    display: flex
+    justify-content: flex-start
+    border: 1px solid #E2E7EC
+    height: 91px
+    padding: 0 30px 0 21px
+    align-items: center
+    margin-bottom: 5px
+    transition: all .3s ease
+    &:hover
+      background: #F5F6F7
+      border: 1px solid #CDD3DB
+      transition: all .3s ease
+  .goods-product__action
+    background: #3582C4
+    box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+    transition: all .3s ease
+    .goods-product__prod
+      color: #ECF5FC
+      transition: all .3s ease
+      span
+        color: #A9D1F1
+        transition: all .3s ease
+    .goods-product__price-gram
+      font-size: 14px
+      color: #A9D1F1
+      transition: all .3s ease
+    .goods-product__stock
+      color: #fff
+      transition: all .3s ease
+    .goods-product__price
+      color: #ECF5FC
+      transition: all .3s ease
+    .goods-product__price-no
+      color: #A9D1F1
+      transition: all .3s ease
+  &__left
+    margin-right: auto
+    transition: all .3s ease
+  &__prod
+    font-weight: 500
+    font-size: 24px
+    color: #213C52
+    margin-bottom: 5px
+    transition: all .3s ease
+    span
+      font-weight: 500
+      font-size: 24px
+      color: #8693A4
+      margin-left: 9px
+      transition: all .3s ease
+  &__price-gram
+    font-size: 14px
+    color: #8693A4
+    transition: all .3s ease
+  &__stock
+    margin-left: auto
+    min-width: 50px
+    height: 32px
+    font-weight: 500
+    font-size: 18px
+    color: #FFFFFF
+    margin-right: 18px
+    background: #D73135
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all .3s ease
+  &__price
+    font-weight: 500
+    font-size: 24px
+    color: #213C52
+    transition: all .3s ease
+  &__price-no
+    font-weight: 500
+    font-size: 18px
+    color: #8693A4
+    text-align: right
+    text-decoration: line-through
+    transition: all .3s ease
+
+.goods-phone
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  border-radius: 5px
+  padding: 0 19px 0 16px
+  background: #F5F6F7
+  height: 63px
+  &__text
+    display: flex
+    align-items: center
+    font-size: 14px
+    color: #5E6A78
+    width: calc(100% - 130px)
+  &__content
+    width: 197px
+    margin-left: 9px
+    line-height: 1.1
+  &__icon-phone
+    width: 24px
+    height: 24px
+    background: url("../img/goods/info-icon.svg") no-repeat center center
+  &__phone
+    margin-left: auto
+    font-weight: 500
+    font-size: 16px
+    color: #5E6A78
+    transition: all .3s ease
+    width: 130px
+    &:hover
+      transition: all .3s ease
+      color: #B07A9E
+
+.goods-kits
+  display: flex
+  justify-content: flex-start
+  border: 1px solid #E2E7EC
+  padding: 12px 17px
+  &__item
+    width: 130px
+  &__img
+    border: 1px solid #E2E7EC
+    width: 121px
+    height: 121px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__name
+    font-size: 13px
+    color: #213C52
+    transition: all .3s ease
+    &:hover
+      transition: all .3s ease
+      color: #B07A9E
+  &__plus
+    width: 40px
+    height: 40px
+    display: flex
+    justify-content: center
+    align-items: center
+    background: #3582C4
+    border-radius: 90%
+    text-align: center
+    font-size: 20px
+    color: #ECF5FC
+    margin-top: 40px
+    margin-left: 4px
+    margin-right: 13px
+  &__price
+    margin-left: 60px
+    margin-top: 30px
+  .price
+    font-weight: 500
+    font-size: 36px
+    color: #213C52
+  .price-no
+    font-weight: 500
+    font-size: 24px
+    color: #D73135
+    position: relative
+    display: inline-block
+    &:after
+      position: absolute
+      top: 14px
+      left: 0
+      width: 100%
+      height: 2px
+      background: #D73135
+      content: ""
+      transform: rotate(-15deg)
+  &__btn
+    margin-top: 7px
+    width: 199px
+    margin-left: auto
+    .btn
+      box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+  &__saving
+    display: flex
+    align-items: center
+    height: 32px
+    background: #D73135
+    font-size: 14px
+    color: #F9E5E5
+    justify-content: center
+    .icon-saving
+      width: 15px
+      height: 14px
+      background: url("../img/goods/saving.svg") no-repeat center center
+      background-size: cover
+      display: block
+      margin-right: 8px
+
+.goods-info
+  display: flex
+  margin-bottom: 74px
+  &__text
+    width: 375px
+  &__title
+    font-weight: 600
+    font-size: 24px
+    color: #213C52
+    margin-bottom: 32px
+    font-family: "Montserrat"
+  &__li
+    font-size: 16px
+    color: #27689E
+    margin-bottom: 13px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+  &__icon
+    width: 22px
+    margin-right: 10px
+  .icon1
+    width: 22px
+    height: 22px
+    background: url("../img/goods/info-info.svg") no-repeat center center
+    display: block
+  .icon2
+    width: 16px
+    height: 21px
+    background: url("../img/goods/bock.svg") no-repeat center center
+    display: block
+  &__box
+    display: flex
+    justify-content: space-between
+    margin-left: auto
+    width: 820px
+  &__item
+    width: 403px
+    border: 1px solid #E2E7EC
+    padding: 16px 18px
+    position: relative
+    max-height: 317px
+    overflow: hidden
+    transition: all 1s ease
+    &.show
+      max-height: 700px
+      transition: all 1s ease
+      .goods-info__more
+        display: none
+  &__subject
+    font-family: 'Montserrat'
+    font-weight: 600
+    font-size: 18px
+    color: #213C52
+    margin-bottom: 14px
+  ul
+    li
+      margin-bottom: 16px
+      span
+        font-size: 16px
+        color: #5E6A78
+        display: block
+  &__heading
+    font-weight: 500
+    font-size: 16px
+    color: #5E6A78
+  &__more
+    position: absolute
+    bottom: 0
+    left: 0
+    font-size: 14px
+    text-decoration-line: underline
+    color: #27689E
+    cursor: pointer
+    height: 180px
+    width: 100%
+    padding: 16px 18px
+    display: flex
+    justify-content: flex-start
+    align-items: flex-end
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.99) 85%, rgba(255,255,255,1) 100%)
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.99)85%,rgba(255,255,255,1) 100%)
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.99) 85%,rgba(255,255,255,1) 100%)
+
+.product-box-goods
+  display: flex
+
+.goods-caption
+  margin-bottom: 27px
+  &__subject
+    font-size: 16px
+    color: #5E6A78
+    position: relative
+  .icon-plus
+    width: 17px
+    height: 17px
+    display: inline-block
+    background: url("../img/goods/caption-plus.svg") no-repeat center center
+    background-size: cover
+    position: relative
+    top: 2px
+    margin-left: 3px
+
+.product-section-goods
+  margin-bottom: 95px
+
+.review-star
+  &__item
+    width: 15px
+    height: 15px
+    margin: 0 2px
+    background: url("../img/goods/start-start-black.svg") no-repeat center center
+    background-size: cover
+    &.checked
+      background: url("../img/goods/start-start.svg") no-repeat center center
+      background-size: cover
+
+.review-one
+  border: 1px solid #E2E7EC
+  padding: 16px 14px
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 12px
+  &__user
+    font-weight: 500
+    font-size: 16px
+    color: #212833
+    margin-right: 12px
+  &__star
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__content
+    font-size: 16px
+    color: #212833
+    margin-bottom: 17px
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__data
+    font-size: 14px
+    color: #5E6A78
+
+.like
+  &__number
+    font-size: 14px
+    color: #5E6A78
+    margin-right: 12px
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__like
+    &-top
+      margin-right: 12px
+      cursor: pointer
+      &.active
+        path
+          fill: #2F8F85
+    &-bottom
+      cursor: pointer
+      &.active
+        path
+          fill: #B42226
+
+.statistics
+  &__item
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 19px
+  &__i
+    font-weight: 500
+    font-size: 16px
+    color: #212833
+  &__band
+    border: 1px solid #CDD3DB
+    border-radius: 3p
+    width: 278px
+    height: 14px
+    margin: 0 auto
+    position: relative
+    &-line
+      height: 100%
+      position: absolute
+      width: 50%
+      background: #3582C4
+      border-radius: 3px 0px 0px 3px
+  &__number
+    font-size: 16px
+    color: #5E6A78
+
+.review
+  &__title
+    font-family: "GothamPro"
+    font-size: 24px
+    color: #213C52
+    margin-bottom: 27px
+    span
+      font-size: 18px
+      color: #8693A4
+      margin-left: 12px
+  &__subject
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    font-family: 'Montserrat'
+    font-weight: 600
+    font-size: 18px
+    color: #213C52
+    margin-bottom: 17px
+    .icon-review
+      width: 15px
+      height: 15px
+      background: url("../img/goods/start-start.svg") no-repeat center center
+      background-size: cover
+      margin-right: 9px
+  &__box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 59px
+  &__wrap
+    width: 631px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    width: 232px
+    &-title
+      font-size: 18px
+      color: #213C52
+      text-align: center
+      margin-bottom: 29px
+    &-review
+      display: flex
+      justify-content: space-between
+      align-itmes:
+      margin-bottom: 22px
+    &-item
+      width: 37px
+      height: 37px
+      background: url("../img/goods/start-start-black.svg") no-repeat center center
+      background-size: coner
+      &.checked
+        background: url("../img/goods/start-start.svg") no-repeat center center
+        background-size: coner
+    &-number
+      font-weight: 500
+      font-size: 18px
+      color: #213C52
+      text-align: center
+  &__statistics
+    width: 324px
+    margin-left: auto
+  &__btn-box
+    display: flex
+    justify-content: space-between
+    align-items: cenetr
+    margin-bottom: 20px
+    .btn
+      width: 199px
+    .select
+      width: 365px
+      height: 53px
+      padding-left: 22px
+      font-size: 16px
+      color: #3582C4
+      background: #fff url(../img/search-page/select.svg) no-repeat 95% center
+      appearance: none
+      outline: none
+  &-one
+    margin-bottom: 12px
+  &__review-box
+    display: flex
+    justify-content: space-between
+    .review-one
+      display: none
+    &__item
+      width: 611px
+  &__more
+    margin-bottom: 64px
+    .btn
+      margin: 0 auto
+
+.wrapper
+  display: flex
+  justify-content: space-between
+  &__left
+    width: calc(100% - 365px)
+  &__right
+  &__title
+    font-family: 'Montserrat'
+    font-weight: 600
+    font-size: 32px
+    color: #213C52
+    margin-bottom: 6px
+  &__link
+    font-size: 16px
+    color: #5E6A78
+    display: flex
+    align-items: center
+    font-size: 14px
+    transition: all .3s ease
+    margin-bottom: 47px
+    &:hover
+      color: #B07A9E
+      transition: all .3s ease
+      path
+        fill: #B07A9E
+        transition: all .3s ease
+    svg
+      transform: rotate(180deg)
+      margin-right: 9px
+  .goods-kits
+    width: 750px
+    margin-bottom: 32px
+
+.stages
+  width: 310px
+  display: flex
+  justify-content: space-between
+  margin-left: auto
+  margin-bottom: 37px
+  &__item
+    position: relative
+    &.active
+      .stages__circle
+        border: 1px solid #65A1D3
+        color: #3582C4
+    &:nth-child(1):after
+      position: absolute
+      top: 26px
+      left: 61px
+      width: 64px
+      height: 1px
+      border-bottom: 1px dotted  #65A1D3
+      content: ''
+    &:nth-child(2):after
+      position: absolute
+      top: 26px
+      left: 74px
+      width: 64px
+      height: 1px
+      border-bottom: 1px dotted  #B6C2CC
+      content: ''
+  &__circle
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: 'Montserrat'
+    font-weight: 500
+    font-size: 24px
+    color: #5E6A78
+    width: 52px
+    height: 52px
+    border-radius: 50%
+    border: 1px solid #B6C2CC
+    margin: 0 auto 7px
+  &__text
+    font-size: 14px
+    color: #5E6A78
+    text-align: center
+
+.basket-info
+  background: #F9FCFF
+  border: 1px solid #ECF5FF
+  box-shadow: 0px 1px 1px rgba(45, 54, 62, 0.1)
+  width: 365px
+  padding: 20px
+  margin-bottom: 12px
+  &__info
+    font-weight: 500
+    font-size: 14px
+    color: #8693A4
+    margin-bottom: 20px
+  &__item
+    margin-bottom: 13px
+  &__name
+    font-size: 16px
+    color: #213C52
+    margin-bottom: 12px
+    span
+      font-size: 16px
+      color: #3582C4
+  &__price
+    font-weight: 500
+    font-size: 16px
+    color: #212833
+    span
+      font-size: 14px
+      color: #5E6A78
+      margin-left: 8px
+  &__btn
+    margin-top: 8px
+  + .goods-phone
+    width: 365px
+
+.basket-one
+  display: flex
+  justify-content: flex-start
+  border-top: 1px solid #E2E7EC
+  width: 811px
+  padding-top: 32px
+  margin-bottom: 32px
+  &__img
+    margin-right: 19px
+  &__center
+    width: 247px
+  &__title
+    font-weight: 500
+    font-size: 24px
+    color: #213C52
+    margin-bottom: 7px
+  &__change-box
+    display: flex
+    align-items: center
+  &__gram
+    font-weight: 500
+    font-size: 18px
+    color: #3582C4
+    padding: 5px 13px
+    border: 1px solid #E2E7EC
+    margin-right: 20px
+  &__change-box
+    margin-bottom: 19px
+  &__change
+    cursor: pointer
+    display: flex
+    justify-content: flex-start
+    font-size: 14px
+    color: #8693A4
+    .icon-change
+      width: 13px
+      height: 13px
+      background: url("../img/basket-page/change.svg") no-repeat center center
+      background-size: cover
+      margin-right: 6px
+  &__info
+    padding-left: 48px
+    width: 262px
+    margin-left: auto
+    borderpx-left: 1px solid #E2E7EC
+    display: flex
+    flex-direction: column
+  &__price-box
+    display: flex
+    justify-content: space-between
+    margin-bottom: 18px
+  &__subject
+    font-size: 14px
+    color: #5E6A78
+    margin-bottom: 8px
+  &__price-price
+    font-weight: 500
+    font-size: 14px
+    color: #212833
+  &__price-gram
+    font-weight: 500
+    font-size: 14px
+    color: #5E6A78
+  &__outcome
+    font-weight: 500
+    font-size: 24px
+    color: #213C52
+  &__action
+    padding: 4px 7px
+    background: #D73135
+    font-weight: 500
+    font-size: 16px
+    color: #FFFFFF
+    display: inline-block
+    width: 50px
+  &__number
+    width: 127px
+    height: 42px
+    margin-top: auto
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    border: 1px solid #DEE4E9
+    button
+      background: #F5F6F7
+      width: 42px
+      height: 42px
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 22px
+      color: #213C52
+      border: none
+      outline: none
+      cursor: pointer
+      &:disabled
+        opacity: 0.4
+    input
+      width: calc(100% - 84px)
+      height: 100%
+      outline: none
+      text-align: center
+      border: none
+      font-size: 16px
+      color: #213C52
+      &:focus
+        outline: none
+
+.basket-section
+  margin-top: 64px
+
+.authorization
+  display: flex
+  justify-content: space-between
+  margin-top: 84px
+  &__left
+    width: 365px
+  &__right
+    width: 365px
+  &__title
+    font-weight: 600
+    font-size: 24px
+    color: #213C52
+  &__subject
+    font-size: 16px
+    color: #5E6A78
+    margin-bottom: 53px
+
+.tabs
+  margin-top: 24px
+.tabs-nav
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 29px
+  border-bottom: 1px solid #E2E7EC
+.tabs-nav a
+  font-size: 16px
+  color: #5E6A78
+  display: block
+  padding-bottom: 5px
+  border-bottom: 5px solid rgba(0,0,0,0)
+.tabs-nav a:first-child
+  margin-right: 37px
+.tabs-nav a.active
+  border-bottom: 5px solid #3582C4
+.tabs-items
+
+.tabs-one
+  &__item
+    position: relative
+    .icon-eye
+      width: 24px
+      height: 24px
+      background: url("../img/basket-page/eye.svg") no-repeat center center
+      display: block
+      position: absolute
+      top: 37px
+      right: 25px
+      cursor: pointer
+      &.active
+        background: url("../img/basket-page/eye-active.svg") no-repeat center center
+  &__input
+    width: 100%
+    border: 1.5px solid #B6C2CC
+    border-radius: 3px
+    height: 44px
+    padding: 0 20px
+    margin-bottom: 21px
+    border-radius: 5px
+    font-size: 16px
+    color: #212833
+  .btn
+    height: 53px
+    border: none
+    cursor: pointer
+    width: 100%
+    margin-bottom: 33px
+    border-radius: 5px
+  &__label
+    font-size: 16px
+    color: #5E6A78
+
+.tabs-nav-one
+  display: flex
+  justify-content: flex-satrt
+  margin-bottom: 35px
+  a
+    font-weight: 500
+    font-size: 18px
+    color: #5E6A78
+    &.active
+      font-weight: 600
+      font-size: 18px
+      color: #3582C4
+  a:first-child
+    margin-right: 22px
+
+.authorization-phone
+  &__input
+    width: 100%
+    border: 1.5px solid #B6C2CC
+    border-radius: 3px
+    height: 44px
+    font-size: 16px
+    color: #212833
+    padding: 0 20px
+    margin-bottom: 21px
+    border-radius: 5px
+  .btn
+    height: 53px
+    border: none
+    cursor: pointer
+    width: 100%
+    margin-bottom: 33px
+    border-radius: 5px
+
+.social-page
+  display: flex
+  justify-content: center
+  &__item
+    width: 49px
+    height: 49px
+    border-radius: 50%
+    display: block
+    margin: 0 14px
+    &_fb
+      background: #C4C4C4 url(../img/footer/fx.svg) no-repeat center center
+      transition: all .3s ease
+      &:hover
+        transition: all .3s ease
+        background: #65A1D3  url(../img/footer/fx.svg) no-repeat center center
+    &_vk
+      background: #C4C4C4 url(../img/footer/vk.svg) no-repeat center center
+      transition: all .3s ease
+      &:hover
+        transition: all .3s ease
+        background: #65A1D3  url(../img/footer/vk.svg) no-repeat center center
+    &_in
+      background: #C4C4C4 url(../img/footer/in.svg) no-repeat center center
+      transition: all .3s ease
+      &:hover
+        transition: all .3s ease
+        background: #65A1D3 url(../img/footer/in.svg) no-repeat center center
+
+.registration
+  &__title
+    font-weight: 600
+    font-size: 24px
+    color: #213C52
+  &__subject
+    font-weight: 600
+    font-size: 18px
+    color: #000000
+    margin-bottom: 24px
+  &__heading
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    font-size: 16px
+    color: #5E6A78
+    margin-bottom: 32px
+    .icon-heading
+      width: 12px
+      height: 12px
+      background: url("../img/registration/subtract.svg") no-repeat center center
+      margin-right: 8px
+      background-size: cover
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    margin-top: 27px
+    margin-bottom: 64px
+    &--margin
+      margin-bottom: 12px
+      margin-top: 0
+    &_item
+      width: 263px
+    &_item + &_item
+      margin-left: 12px
+    &_box
+      margin-top: 0
+      margin-bottom: 0
+      margin-left: 12px
+      .registration__box_item
+        width: 125px
+    &_btn
+      width: 199px
+      .btn
+        width: 100%
+  &__label
+    font-size: 16px
+    color: #5E6A78
+    margin-bottom: 7px
+  &__input
+    border: 1.5px solid #B6C2CC
+    border-radius: 3px
+    font-size: 16px
+    color: #212833
+    padding: 0 20px
+    height: 44px
+  select
+    border: 1.5px solid #B6C2CC
+    border-radius: 3px
+    display: block
+    height: 44px
+    background: #fff url(../img/search-page/select.svg) no-repeat 90% center
+    background-size: 10px 6px
+    appearance: none
+    width: 100%
+    padding-left: 15px
+    &:focus
+      outline: none
+  &__link
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-top: 8px
+    &--item
+      font-size: 14px
+      text-decoration-line: underline
+      color: #B07A9E
+      margin-right: 13px
+      transition: all .3s ease
+      cursor: pointer
+      &:hover
+        color: #0056b3
+        transition: all .3s ease
+
+.tabs-registration
+  margin-top: 32px
+  width: 628px
+  margin-bottom: 32px
+  &__nav
+    display: flex
+    justify-content: space-around
+    align-items: center
+    background: #F5F6F7
+    border: 1px solid #DEE4E9
+    padding: 16px 0
+    margin-bottom: 44px
+  &__link
+    font-size: 16px
+    color: #5E6A78
+    &:hover
+      font-weight: 500
+      font-size: 16px
+      color: #213C52
+    &.active
+      font-weight: 500
+      font-size: 16px
+      color: #213C52
+      position: relative
+      &:after
+        position: absolute
+        bottom: -17px
+        left: 0
+        width: 100%
+        height: 5px
+        background: #3582C4
+        content: ""
+
+.custor
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &--registration
+    width: 628px
+    margin-bottom: 62px
+  &__item
+    width: 310px
+    margin-bottom: 6px
+  &__radio
+    position: absolute
+    z-index: -1
+    opacity: 0
+  &__label
+    position: relative
+    border: 1px solid #DDEDFF
+    cursor: pointer
+    padding: 15px 15px 15px 15px
+    display: flex
+    flex-direction: column
+    margin-bottom: 0
+    height: 100%
+  &__title
+    font-weight: 500
+    font-size: 18px
+    color: #213C52
+    padding-right: 25px
+    margin-bottom: 16px
+  &__subject
+    font-weight: 500
+    font-size: 18px
+    color: #213C52
+    margin-bottom: 16px
+    padding-right: 25px
+  &__span
+    font-size: 14px
+    color: #5E6A78
+  &__warnings
+    position: absolute
+    top: 16px
+    right: 16px
+  &__country
+    position: absolute
+    top: 16px
+    right: 16px
+    width: 29px
+    height: 18px
+  &__ru
+    background: url("../img/registration/ru.svg") no-repeat center center
+  &__kaz
+    background: url("../img/registration/kaz.svg") no-repeat center center
+  &__data
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    font-size: 14px
+    color: #5E6A78
+    margin-bottom: 24px
+    svg
+      margin-right: 8px
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-top: auto
+  &__text
+    font-size: 14px
+    color: #41ACA1
+    svg
+      margin-right: 8px
+    &--red
+      color: #DF6466
+  &__price
+    margin-left: auto
+    font-weight: 500
+    font-size: 18px
+    color: #213C52
+  &__radio + label:hover
+    background: #ECF5FC
+    border: 1px solid #DDEDFF
+
+  &__radio:checked + label
+    background: #3582C4
+    box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+    .custor__title
+      color: #ECF5FC
+    .custor__subject
+      color: #ECF5FC
+    .custor__span
+      color: #FFFFFF
+    .custor__warnings
+      path
+        fill: #ECF5FC
+    .custor__data
+      color: #A9D1F1
+      path
+        fill: #65A1D3
+    .custor__text
+      color: #F9E5E5
+      path
+        fill: #F9E5E5
+    .custor__price
+      color: #ECF5FC
+
+.order
+  &__box
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    align-items: flex-start
+  &__btn
+    margin-bottom: 64px
+  &__check
+    width: 402px
+  &__coming
+    width: 401px
+  &__details
+    width: 418px
+  &--check
+    background: #3582C4
+    box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+    padding: 16px 20px
+    &__icon
+      width: 30px
+      height: 30px
+      background: url("../img/order/mark.svg") no-repeat center center
+      background-size: cover
+      margin: 0 auto
+      margin-bottom: 12px
+    &__title
+      font-family: 'Montserrat'
+      font-weight: 600
+      font-size: 18px
+      color: #ECF5FC
+      text-align: center
+      margin-bottom: 21px
+    &__text
+      font-size: 14px
+      color: #A9D1F1
+      text-align: center
+    &__mail
+      font-weight: 500
+      font-size: 16px
+      text-align: center
+      color: #F9FCFF
+      margin-bottom: 46px
+    &__link
+      font-size: 14px
+      text-decoration-line: underline
+      color: #A9D1F1
+      text-align: center
+      display: block
+      &:hover
+        color: #fff
+        transition: all .3s ease
+  &--coming
+    border: 1px solid #DDEDFF
+    padding: 16px
+    &__box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 21px
+    &__title
+      font-family: 'Montserrat'
+      font-weight: 600
+      font-size: 24px
+      color: #213C52
+    &__link
+      font-size: 14px
+      color: #3582C4
+      transition: all .3s ease
+      &:hover
+        color: #B07A9E
+        transition: all .3s ease
+    &__item
+      display: flex
+      justify-content: space-between
+      margin-bottom: 13px
+    &__img
+      width: 48px
+    &__right
+      width: calc(100% - 70px)
+    &__text
+      font-size: 16px
+      color: #5E6A78
+      margin-bottom: 9px
+      span
+        font-size: 16px
+        color: #3582C4
+    &__price
+      font-weight: 500
+      font-size: 16px
+      color: #212833
+  &--details
+    &__item
+      padding: 10px
+      display: flex
+      align-items: center
+      background: #ECF5FC
+      margin-bottom: 3px
+      &--green
+        background: #E5FCFB
+        .order--details__icon
+          background: #41ACA1
+    &__icon
+      width: 49px
+      height: 49px
+      border-radius: 50%
+      background: #3582C4
+      display: flex
+      justify-content: center
+      align-items: center
+      margin-right: 18px
+      .icon-icon1
+        width: 20px
+        height: 20px
+        background: url("../img/order/icon1.svg") no-repeat center center
+      .icon-icon2
+        width: 21px
+        height: 17px
+        background: url("../img/order/icon2.svg") no-repeat center center
+      .icon-icon3
+        width: 20px
+        height: 20px
+        background: url("../img/order/icon3.svg") no-repeat center center
+    &__text
+      width: 323px
+      font-size: 16px
+      color: #213C52
+
+.error
+  &__box
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__img
+    width: 510px
+    margin-right: 58px
+  &__right
+    width: 552px
+  &__title
+    font-family: 'Montserrat'
+    font-weight: 500
+    font-size: 48px
+    color: #213C52
+    margin-bottom: 15px
+  &__text
+    font-size: 16px
+    color: #454545
+    margin-bottom: 23px
+  &__btn
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    .btn
+      width: 199px
+      margin-right: 8px
+    .btn--blue
+      box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+
+.container
+  @media (max-width: 576px)
+    padding-left: 15px
+    padding-right: 15px
+
+.category-mobile
+  padding: 0 16px
+  display: flex
+  justify-content: flex-start
+  flex-wrap: wrap
+  &__item
+    width: 109px
+    margin-right: 36px
+    margin-bottom: 16px
+  &__img
+    margin-bottom: 6px
+  &__title
+    font-size: 14px
+    color: #213C52
+    line-height: 1.3
+.nav-mobile
+  &__top
+    padding-bottom: 30px
+  &__hr
+    width: 100%
+    height: 1px
+    background: #E2E7EC
+    margin-top: 15px
+  &__nav
+    padding-top: 30px
+    padding-left: 28px
+    padding-right: 28px
+  &__link
+    font-size: 16px
+    line-height: 19px
+    margin-bottom: 27px
+    display: block
+    color: #213C52
+    &.active
+      font-weight: 500
+      font-size: 18px
+      color: #27689E
+  &__scroll
+    height: calc(100% - 96px)
+    overflow-y: auto
+.footer-nav-mobile
+  background: #1D496F
+  padding: 30px 15px 30px
+  &__text
+    font-size: 14px
+    color: #ECF5FC
+    margin-bottom: 14px
+  &__form
+    input
+      border: 1.5px solid #65A1D3
+      border-radius: 3px
+      font-size: 16px
+      color: #65A1D3
+      text-align: center
+      background: rgba(0,0,0,0)
+      height: 44px
+      margin-bottom: 6px
+    button
+      background: #B07A9E
+      box-shadow: 0px 4px 20px rgba(46, 83, 140, 0.5)
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 16px
+      color: #ECF5FC
+      height: 57px
+      margin-bottom: 14px
+      width: 100%
+      border: none
+  &__p
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 14px
+    color: #A8EBE8
+    margin-bottom: 64px
+    .icon-protection
+      width: 13px
+      height: 15px
+      background: url("../img/footer/icon2.svg") no-repeat center center
+      margin-right: 6px
+      display: inline-block
+  &__info
+  &__title
+    font-weight: 500
+    font-size: 18px
+    color: #A9D1F1
+    margin-bottom: 25px
+  &__link
+    font-size: 14px
+    color: #ECF5FC
+    display: block
+    margin-bottom: 30px
+  &__social
+    justify-content: flex-start
+    a
+      margin-left: 0
+      margin-right: 14px

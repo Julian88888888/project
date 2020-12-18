@@ -1,0 +1,590 @@
+include ../layout/_mixins
+
+doctype html
+html(lang="ru")
+	- var title = 'Main | Company name'
+	include ../layout/_head
+	
+	body
+		|
+		|
+		|
+		// Header
+		include ../layout/_header
+
+		|
+		|
+		|
+		section.b-goods
+			.container 
+				include ../layout/_breadcrumbs
+				._box 
+					._left 
+						.b-goods-slide-for 
+							._item 
+								img(src="img/goods/img-big.png")
+							._item 
+								img(src="img/goods/img-big.png")
+							._item 
+								img(src="img/goods/img-big.png")
+							._item 
+								img(src="img/goods/img-big.png")
+							._item 
+								img(src="img/goods/img-big.png")
+						.b-goods-slide-nav 
+							._box
+								._item 
+									img(src="img/goods/img-big.png")
+								._item 
+									img(src="img/goods/img-big.png")
+								._item 
+									img(src="img/goods/img-big.png")
+								._item 
+									img(src="img/goods/img-big.png")
+								._item 
+									img(src="img/goods/img-big.png")
+							._arrow 
+								._prev.goods-slide-nav__arr 
+								._next.goods-slide-nav__arr
+					._right 
+						.b-goods-content 
+							._left 
+								._name Voltaren
+								._title Voltaren® Schmerzgel forte
+								._cod PZN 571075
+									span Baren GmBH
+								._cat Крем для лица и глаз
+								._text Zur Abschwellung der Nasenschleimhaut bei Schnupfen Zur Abschwellung der Nasenschleimhaut bei Schnupfen Zur Abschwellung der Nasenschleimhaut bei Schnupfen
+								.b-rating-goods._rating 
+									._box
+										span._item.checked
+										span._item.checked
+										span._item.checked
+										span._item
+										span._item
+									._text (17k)
+								._btn 
+									a(href="#").btn-rating 20 отзывов 
+										include ../../img/goods/star-arrow-right.svg
+								a(href="#")._btn--basket.btn--basket 
+									include ../../img/goods/hart.svg 
+									| В избранное
+
+							._right 
+								.b-basket-number 
+									._box 
+										._select
+											select
+												option(value="") 1
+												option(value="") 2
+												option(value="") 3
+												option(value="") 4
+												option(value="") 5
+										._btn 
+											a(href="#").btn--basket-blue В корзину 
+								.b-goods-product
+									a(href="#")._item 
+										._left
+											._prod 120g
+												span x4 
+											._price-gram 11,60 € / 100 g
+										._stock 20%
+										._right 
+											._price € 2000,88
+											._price-no € 2000,88
+									a(href="#")._item.goods-product__action 
+										._left
+											._prod 120g
+												span x4 
+											._price-gram 11,60 € / 100 g
+										._stock 20%
+										._right 
+											._price € 20,88
+											._price-no € 20,88
+									a(href="#")._item 
+										._left
+											._prod 120g
+												span
+											._price-gram 11,60 € / 100 g
+										._stock 20%
+										._right 
+											._price € 2000,88
+											._price-no € 2000,88
+								.b-goods-phone 
+									._text 
+										i._icon-phone 
+										._content Появился вопрос? Позвоните нам прямо сейчас
+									a(href="tel:+79991242424")._phone +7 999 124-24-24
+						.b-goods-kits 
+							._item  
+								._img 
+									img(src="img/goods/img-kits.png")
+								a(href="#")._name Voltaren® Schmerzgel forte Voltaren® Schmerzgel Voltaren® Schmerzgel forte
+							._plus +
+							._item 
+								._img 
+									img(src="img/goods/img-kits.png")
+								a(href="#")._name Voltaren® Schmerzgel
+							._price 
+								.price € 170
+								.price-no € 210
+							._btn 
+								a(href="#").btn.btn--blue Купить набор
+								span._saving 
+									i.icon-saving
+									| Экономия 30%
+				.b-goods-info 
+					._text 
+						._title Информация о продукте и обязательная информация
+						._li
+							._icon 
+								i.icon1
+							| Arzneimittelservice
+						._li
+							._icon 
+								i.icon2
+							| Beipackzettel Paracetamol-ratiopharm® 500 mg
+					._box
+						._item 
+							._subject Активные ингредиенты и 
+								br 
+								| вспомогательные вещества
+							ul 
+								li 
+									._heading WIRKSTOFFE
+									span Magnesium stearat 
+										br 
+										| Croscarmellose natrium
+										br 
+										| Siliciumdioxid, hochdisperses
+										br 
+										| Cellulose, mikrokristalline
+								li 
+									._heading WIRKSTOFFE
+									span Magnesium stearat 
+										br 
+										| Croscarmellose natrium
+										br 
+										| Siliciumdioxid, hochdisperses
+										br 
+										| Cellulose, mikrokristalline
+						._item 
+							._subject Больше информации
+							ul 
+								li 
+									._heading LA ROCHE LIPIKAR BAUME AP + 
+										br
+										| KÖRPERBALSAM
+									span Der rückfettende Körperbalsam LIPIKAR BAUME AP+ von La Roche-Posay versorgt zu Neurodermitis neigende sowie empfindliche, extrem trockene und juckende Haut. 
+								li 
+									span Der rückfettende Körperbalsam LIPIKAR BAUME AP+ von La Roche-Posay versorgt zu Neurodermitis neigende sowie empfindliche, extrem trockene und juckende Haut.  
+								li 
+									span Der rückfettende Körperbalsam LIPIKAR BAUME AP+ von La Roche-Posay versorgt zu Neurodermitis neigende sowie empfindliche, extrem trockene und juckende Haut.  
+							._more Посмотреть все
+		section.b-product-section.product-section-goods
+			.container 
+				.b-goods-caption 
+					h3.title К вашему заказу просто замечательно подойдет
+					._subject Добавьте понравившийся товар к заказу просто нажав на плюс — 
+						i.icon-plus
+				.b-product-box-goods
+					.b-product--item._item  
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno € 170 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+					.b-product--item._item 
+						._heart 
+							include ../../img/product/heart.svg
+							include ../../img/product/heart-red.svg
+						._img 
+							img(src="img/product/img1.png")
+						a(href="#")._name Nasenspray • 155 ml 
+						a(href="#")._link Otriven® gegen Schnupfen 0,1 % Dosierspray ohne Konservierungsstoffe 
+						.b-rating._rating 
+							._box
+								span._item.checked
+								span._item
+								span._item
+								span._item
+								span._item
+							._text (17k)
+						.b-money._money-block 
+							._price € 170 
+							._priceno 
+							._btn-add.money__btn-plus +
+		section.b-review 
+			.container 
+				._title Рейтинг 
+					span 500 отзывов 
+				._subject 
+					i.icon-review 
+					| Лучший отзыв
+				._box 
+					.b-review-one
+						._box 
+							._user Валерия Ящменько
+							.b-review-star._star 
+								span._item.checked
+								span._item.checked
+								span._item.checked
+								span._item.checked
+								span._item 
+						._content Вы знаете, купила этот крем и просто о**ела! Мнгнгновенный эффект.
+							br 
+							| Mуж аж назад за мне женился!!!!!!!!! 
+							br 
+							| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+						._bottom 
+							._data Месяц назад
+							.b-like._like
+								._box 
+									._number 230
+									._like-top 
+										include ../../img/goods/lick.svg
+									._like-bottom
+										include ../../img/goods/dis-lick.svg
+					._wrap 
+						._info 
+							._info-title 17 000 оценок
+							._info-review 
+								._info-item.checked 
+								._info-item.checked 
+								._info-item.checked 
+								._info-item.checked 
+								._info-item
+							._info-number 5 из 5
+						.b-statistics._statistics
+							._item 
+								._i 5
+								._band
+									._band-line(style="width: 99%")
+								._number 1
+							._item 
+								._i 4
+								._band
+									._band-line(style="width: 99%")
+								._number 99
+							._item 
+								._i 3
+								._band
+									._band-line(style="width: 99%")
+								._number 1
+							._item 
+								._i 2
+								._band
+									._band-line(style="width: 99%")
+								._number 1
+							._item 
+								._i 1
+								._band
+									._band-line(style="width: 99%")
+								._number 1
+				._btn-box 
+					a(href="#").btn.btn--blue Оставить отзыв 
+					select.select
+						option(value="") По дате добавления  
+						option(value="") По дате добавления1
+						option(value="") По дате добавления2
+						option(value="") По дате добавления3
+						option(value="") По дате добавления4
+				._review-box 
+					._review-box__item
+						.b-review-one(style="display: block;")
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content Вы знаете, купила этот крем и просто о**ела! Мнгнгновенный эффект.
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+						.b-review-one(style="display: block;")
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! Все коллеги на работе не оценили. И еще двадцать строчек которые длинные еще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныеИ еще двадцать строчек которые длинные еще двадцать строчек которые длинныееще двадцать строчек которые
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+						.b-review-one
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! Все коллеги на работе не оценили. И еще двадцать строчек которые длинные еще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые дл
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+						.b-review-one
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content Вы знаете, купила этот крем и просто о**ела! Мнгнгновенный эффект.
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+					._review-box__item
+						.b-review-one(style="display: block;")
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! Все коллеги на работе не оценили. И еще двадцать строчек которые длинные еще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые дл
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+						.b-review-one(style="display: block;")
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content Вы знаете, купила этот крем и просто о**ела! Мнгнгновенный эффект.
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+						.b-review-one
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! А я не рекомендую. Воняет п***ц! Все коллеги на работе не оценили. И еще двадцать строчек которые длинные еще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые длинныееще двадцать строчек которые дл
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+						.b-review-one
+							._box 
+								._user Валерия Ящменько
+								.b-review-star._star 
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item.checked
+									span._item 
+							._content Вы знаете, купила этот крем и просто о**ела! Мнгнгновенный эффект.
+								br 
+								| Mуж аж назад за мне женился!!!!!!!!! 
+								br 
+								| ПРОСТО УЛЁЁЁЁЁЁЁЁЁТ
+							._bottom 
+								._data Месяц назад
+								.b-like._like
+									._box 
+										._number 230
+										._like-top 
+											include ../../img/goods/lick.svg
+										._like-bottom
+											include ../../img/goods/dis-lick.svg
+				._more 
+					.btn.btn--more Загрузить ещё
+		section.b-recently 
+			.container 
+				h3.title Вы смотрели недавно
+				._box 
+					._item 
+						._img 
+							img(src="img/recently/img.png")
+						a(href="#")._name Nasenspray
+						a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+					._item 
+						._img 
+							img(src="img/recently/img.png")
+						a(href="#")._name Nasenspray
+						a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+					._item 
+						._img 
+							img(src="img/recently/img.png")
+						a(href="#")._name Nasenspray
+						a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+					._item 
+						._img 
+							img(src="img/recently/img.png")
+						a(href="#")._name Nasenspray
+						a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte
+					._item 
+						._img 
+							img(src="img/recently/img.png")
+						a(href="#")._name Nasenspray
+						a(href="#")._title Voltaren® Schmerzgel forte Schmerzgel forte 
+
+
+		| 
+		|
+		|
+		// Footer
+		include ../layout/_footer
